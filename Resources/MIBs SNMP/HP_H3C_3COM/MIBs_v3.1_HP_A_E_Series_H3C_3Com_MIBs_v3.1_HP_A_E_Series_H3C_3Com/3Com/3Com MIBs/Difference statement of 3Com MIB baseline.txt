@@ -1,0 +1,1263 @@
+----------------------------------------------------
+2011-04-22
+Changed MIBs (15)
+a3com-huawei-cbqos2.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcps.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-rrm.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-ntp.mib
+a3com-huawei-oid.mib
+a3com-huawei-portal.mib
+a3com-huawei-radius.mib
+a3com-huawei-wapi.mib
+rfc1573a-IANAifType.mib
+
+Added New MIBs (8)
+a3com-huawei-aaa-nasid.mib
+a3com-huawei-dar.mib
+a3com-huawei-pbr.mib
+ipsec-ikeaction.mib
+ipsec-ipsecaction.mib
+rfc4087-tunnel.mib
+rfc4807-ipsec-spd.mib
+savi.mib
+
+Removed MIBs (11)
+rfc1450-snmpv2.mib
+rfc2011-ip-icmp.mib
+rfc2012-tcp.mib
+rfc2013-udp.mib
+rfc2021-rmon2.mib
+rfc2574-snmp-usm.mib
+rfc2575-snmp-vacm.mib
+rfc2668-mau.mib
+rfc2737-entity.mib
+rfc3291-inet-address.mib
+rfc3636-mau.mib
+
+----------------------------------------------------
+2010-10-21
+Changed MIBs (34)
+a3com-huawei-acfp.mib
+a3com-huawei-acl.mib
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcp-server.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-cfgext.mib
+a3com-huawei-dot11-qos.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-roam.mib
+a3com-huawei-dot11-rrm.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-wids.mib
+a3com-huawei-e1.mib
+a3com-huawei-e1t1vi.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-if-ext.mib
+a3com-huawei-ip-address.mib
+a3com-huawei-lag.mib
+a3com-huawei-ntp.mib
+a3com-huawei-portal.mib
+a3com-huawei-posa.mib
+a3com-huawei-ppp-over-sonet.mib
+a3com-huawei-radius.mib
+a3com-huawei-snmp-ext.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-syslog.mib
+a3com-huawei-sys-man.mib
+a3com-huawei-trap.mib
+a3com-huawei-wapi.mib
+
+Added New MIBs (11)
+a3com-huawei-evc.mib
+a3com-huawei-li.mib
+a3com-huawei-minm.mib
+a3com-huawei-vsi.mib
+ianaiprouteprotocol.mib
+rfc4001-inet-address.mib
+rfc4022-tcp.mib
+rfc4113-udp.mib
+rfc4293-ip.mib
+rfc5060-pim-std.mib
+rfc5240-pim-bsr.mib
+
+Removed MIBs (4)
+rfc4001-inet-address-mib.mib
+rfc4022-tcp-mib.mib
+rfc4113-udp-mib.mib
+rfc4293-ip-mib.mib
+
+----------------------------------------------------
+2010-03-17
+Changed MIBs (10)
+3fc-045.mib
+a3com-huawei-3gmodem.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-lag.mib
+a3com-huawei-oid.mib
+a3com-huawei-transceiver-info.mib
+a3com-huawei-voice-call-history.mib
+a3com-huawei-voice-dial-control.mib
+
+Added New MIBs (2)
+a3com-huawei-arp-ratelimit.mib
+sflow.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2009-11-04
+Changed MIBs (16)
+3fc-045.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcp-server.mib
+a3com-huawei-domain.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-rrm.mib
+a3com-huawei-dot11s-mesh.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-ip-address.mib
+a3com-huawei-isdn.mib
+a3com-huawei-oid.mib
+a3com-huawei-pppoe-server.mib
+a3com-huawei-radius.mib
+a3com-huawei-trap.mib
+
+Added New MIBs (2)
+a3com-huawei-blg.mib
+a3com-huawei-rs485.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2009-09-14
+Changed MIBs (15)
+a3com-huawei-device.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-wids.mib
+a3com-huawei-e1.mib
+a3com-huawei-e1t1vi.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-if-ext.mib
+a3com-huawei-isdn.mib
+a3com-huawei-mac-information.mib
+a3com-huawei-t1.mib
+a3com-huawei-voice-dial-control.mib
+
+Added New MIBs (12)
+a3com-huawei-dhcp-server.mib
+a3com-huawei-l2isolate.mib
+a3com-huawei-pppoe-server.mib
+rfc4001-inet-address-mib.mib
+rfc4022-tcp-mib.mib
+rfc4113-udp-mib.mib
+rfc4265-vpn-tc-std.mib
+rfc4293-ip-mib.mib
+rfc4382-mpls-l3vpn-std.mib
+rfc4502-rmon2.mib
+rfc4836-iana-mau.mib
+rfc4836-mau.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2009-07-29
+Changed MIBs (31)
+a3com-huawei-cbqos2.mib
+a3com-huawei-common.mib
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-domain.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-roam.mib
+a3com-huawei-dot11-rrm.mib
+a3com-huawei-dot11s-mesh.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-wids.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-if-ext.mib
+a3com-huawei-lpbkdt.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-oid.mib
+a3com-huawei-radius.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-trap.mib
+a3com-huawei-syslog.mib
+a3com-huawei-sys-man.mib
+a3com-huawei-user.mib
+a3com-huawei-voice-dial-control.mib
+a3com-huawei-voice-vlan.mib
+a3com-huawei-wapi.mib
+rfc1573a-IANAifType.mib
+
+Added New MIBs (10)
+a3com-huawei-3gmodem.mib
+a3com-huawei-acfp.mib
+a3com-huawei-dns.mib
+a3com-huawei-lldp-ext.mib
+a3com-huawei-portal.mib
+a3com-huawei-snmp-ext.mib
+rfc2788.mib
+rfc3636-mau.mib
+rfc4780-sip-tc.mib
+rfc4780-sip-ua.mib
+
+
+Removed MIBs (0)
+----------------------------------------------------
+2009-01-14
+Changed MIBs (5)
+a3com-huawei-device.mib
+a3com-huawei-domain.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-ike-monitor.mib
+a3com-huawei-ipsec-monitor.mib
+
+----------------------------------------------------
+2008-12-12
+Changed MIBs (21)
+a3com-huawei-aal5.mib
+a3com-huawei-common.mib
+a3com-huawei-device.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-cfgext.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-wids.mib
+a3com-huawei-dsp.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-epon.mib
+a3com-huawei-ifqos2.mib
+a3com-huawei-oid.mib
+a3com-huawei-radius.mib
+a3com-huawei-storm-constrain.mib
+a3com-huawei-trap.mib
+rfc2674-qbridge.mib
+
+Added New MIBs (15)
+3fc-045.mib
+a3com-huawei-afc.mib
+a3com-huawei-dot11-qos.mib
+a3com-huawei-dot11-roam.mib
+a3com-huawei-dot11-rrm.mib
+a3com-huawei-dot11s-mesh.mib
+a3com-huawei-lpbkdt.mib
+a3com-huawei-net-man.mib
+a3com-huawei-posa.mib
+a3com-huawei-stack.mib
+a3com-huawei-voice-call-history.mib
+a3com-huawei-web-authentication.mib
+ieee8021-cfm.mib
+ieee802dot11.mib
+rfc4878-dot3-oam.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2008-05-12
+Changed MIBs (8)
+a3com-huawei-user.mib
+a3com-huawei-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-device.mib
+a3com-huawei-8021x-ext.mib
+
+Added New MIBs (4)
+a3com-huawei-voice-call-active.mib
+rfc2128-dial-control.mib
+rfc2790-host-resources.mib
+draft-reeder-snmpv3-usm-3desede.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2008-04-09
+Changed MIBs (7)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-ui-man.mib
+
+Added New MIBs (1)
+a3com-huawei-voice-dial-control.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2008-03-01
+Changed MIBs (11)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-oid.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-cbqos2.mib
+a3com-huawei-qos-capability.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+
+Added New MIBs (4)
+a3com-huawei-dsp.mib
+a3com-huawei-firewall.mib
+a3com-huawei-mac-information.mib
+rfc4444-isis.mib
+
+Removed MIBs (1)
+isis.mib
+
+----------------------------------------------------
+2008-01-11
+Changed MIBs (8)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-ifqos2.mib
+a3com-huawei-ip-address.mib
+a3com-huawei-oid.mib
+a3com-huawei-splat-vlan.mib
+
+Added New MIBs (6)
+a3com-huawei-mcdr.mib
+a3com-huawei-voice-if.mib
+a3com-huawei-ssh.mib
+a3com-huawei-epon-fb.mib
+rfc1229.mib
+rfc2115-frame-relay-dte.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2007-12-15
+Changed MIBs (8)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-cbqos2.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-if-ext.mib
+a3com-huawei-qinq.mib
+
+Added New MIBs (0)
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-11-17
+Changed MIBs (3)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-entity-ext.mib
+
+Added New MIBs (0)
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-10-22
+Changed MIBs (2)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+
+Added New MIBs (0)
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2007-09-11
+Changed MIBs (11)
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-dot11-wids.mib
+a3com-huawei-oid.mib
+a3com-huawei-ppp-over-sonet.mib
+a3com-huawei-rpr.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+
+Added New MIBs (2)
+a3com-huawei-dot11-cfgext.mib
+a3com-huawei-dot11-wlanext.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2007-07-12
+Changed MIBs (9)
+a3com-huawei-cbqos.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcpsnoop.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-nat.mib
+a3com-huawei-oid.mib
+a3com-huawei-rrpp.mib
+
+Added New MIBs (5)
+a3com-huawei-l2vpn-pwe3.mib
+a3com-huawei-mplsoam.mib
+a3com-huawei-mplsoam-ps.mib
+a3com-huawei-wapi.mib
+gb15629dot11-wapi.mib
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-06-09
+Changed MIBs (10)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-station.mib
+a3com-huawei-nqa.mib
+a3com-huawei-oid.mib
+a3com-huawei-rrpp.mib
+
+Added New MIBs (2)
+a3com-huawei-dot11-wids.mib
+a3com-huawei-e1t1vi.mib
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-05-07
+Changed MIBs (5)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-epon.mib
+
+Added New MIBs (0)
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-04-08
+Changed MIBs (5)
+a3com-huawei-nqa.mib
+a3com-huawei-rrpp.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-domain.mib
+
+Added New MIBs (0)
+
+Removed MIBs (0)
+
+
+----------------------------------------------------
+2007-03-08
+Changed MIBs (8)
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-if-ext.mib
+a3com-huawei-ipsec-monitor.mib
+a3com-huawei-lag.mib
+a3com-huawei-ndec.mib
+a3com-huawei-rrpp.mib
+a3com-huawei-trap.mib
+a3com-huawei-user.mib
+
+Added New MIBs (2)
+rfc2662-adsl-line.mib
+rfc2662-adsl-tc.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2007-01-31
+Changed MIBs (4)
+a3com-huawei-dldp.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-oid.mib
+a3com-huawei-ui-man.mib
+
+Added New MIBs (5)
+a3com-huawei-dot11-acmt.mib
+a3com-huawei-dot11-apmt.mib
+a3com-huawei-dot11-cfg.mib
+a3com-huawei-dot11-ref.mib
+a3com-huawei-dot11-station.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2006-12-16
+Changed MIBs (4)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-port-security.mib
+a3com-huawei-oid.mib
+
+Added New MIBs (1)
+a3com-huawei-rcp.mib
+
+Removed MIBs (0)
+
+----------------------------------------------------
+2006-11-05
+Changed MIBs (3)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-splat-inf.mib
+
+Added New MIBs (3)
+lldp.mib
+lldp-ext-dot1.mib
+lldp-ext-dot3.mib
+
+Removed MIBs (1)
+a3com-huawei-isis-df13.mib
+
+----------------------------------------------------
+
+2006-09-23
+Changed MIBs (4)
+a3com-huawei-acl.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-splat-performance.mib
+a3com-huawei-oid.mib
+
+Added New MIBs (1)
+a3com-huawei-nqa.mib
+
+Removed MIBs(1)
+a3com-huawei-ping.mib
+----------------------------------------------------
+
+
+2006-08-30
+Changed MIBs (2)
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+
+Added New MIBs (0)
+
+----------------------------------------------------
+
+
+2006-08-02
+Changed MIBs (3)
+a3com-huawei-acl.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-lag.mib
+
+Added New MIBs (2)
+a3com-huawei-rpr
+rfc4133-entity.mib
+
+----------------------------------------------------
+
+2006-07-18
+Changed MIBs (5)
+a3com-huawei-epon.mib
+a3com-huawei-epon-uni.mib
+a3com-huawei-isis-df13.mib
+a3com-huawei-sna-dlsw.mib
+a3com-huawei-transceiver-info.mib
+
+----------------------------------------------------
+2006-06-21
+Changed MIBs (8)
+a3com-huawei-cbqos.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-ifqos2.mib
+a3com-huawei-oid.mib
+a3com-huawei-port-security.mib
+a3com-huawei-splat-inf.mib
+
+Added New MIBs (2)
+a3com-huawei-bfd-std.mib
+a3com-huawei-voaaaclient.mib
+
+----------------------------------------------------
+2006-06-06
+Changed MIBs (7)
+a3com-huawei-device.mib
+a3com-huawei-dhcpsnoop.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-hgmp.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-srm.mib
+
+----------------------------------------------------
+2006-05-10 11:04
+Changed MIBs (16)
+a3com-huawei-cbqos2.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcps.mib
+a3com-huawei-domain.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-hgmp.mib
+a3com-huawei-ifqos2.mib
+a3com-huawei-ipv6-address.mib
+a3com-huawei-ntp.mib
+a3com-huawei-oid.mib
+a3com-huawei-ping.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-sys-man.mib
+a3com-huawei-vodialcontrol.mib
+a3com-huawei-vogeneral.mib
+
+Added new MIBs (3)
+a3com-huawei-ipv6-address.mib
+a3com-huawei-transceiver-info.mib
+rfc3826-snmp-usm-aes.mib
+
+20060403
+Changed MIBs
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-vodialcontrol.mib
+a3com-huawei-vogeneral.mib
+
+Added new MIBs
+a3com-huawei-qinq.mib
+rfc1382-x25.mib
+rfc2011-ip-icmp.mib
+rfc2012-tcp.mib
+rfc2013-udp.mib
+rfc2452-ipv6-tcp.mib
+rfc2454-ipv6-udp.mib
+rfc2465-ipv6.mib
+rfc2465-ipv6-tc.mib
+rfc2466-ipv6-icmp.mib
+rfc2514-atm-tc.mib
+rfc2515-atm.mib
+rfc3273-hc-rmon.mib
+
+20060321
+Changed MIBs
+a3com-huawei-acl.mib
+a3com-huawei-cbqos2.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcps.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-ifqos2.mib
+a3com-huawei-isis-df13.mib
+a3com-huawei-port-security.mib
+a3com-huawei-qos.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-mam.mib
+
+Added new MIBs
+a3com-huawei-epon-uni.mib
+
+20060306
+Changed MIBs
+a3com-huawei-device.mib
+a3com-huawei-dhcprelay.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-ipsec-monitor.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-mpm.mib
+a3com-huawei-oid.mib
+a3com-huawei-port-security.mib
+a3com-huawei-srm.mib
+a3com-huawei-user.mib
+a3com-huawei-ping.mib
+
+20060213
+Changed MIBs
+a3com-huawei-acl.mib
+a3com-huawei-cbqos2.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-epon.mib
+a3com-huawei-hgmp.mib
+a3com-huawei-oid.mib
+a3com-huawei-power-eth-ext.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-sys-man.mib
+rfc3813-mpls-lsr-std.mib
+
+Added new MIBs
+a3com-huawei-mirrorgroup.mib
+rfc3291-inet-address.mib
+
+removed MIBs
+rfc2851-inet-address.mib
+
+20060113
+Changed MIBs
+a3com-huawei-srm.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-device.mib
+a3com-huawei-efm-common.mib
+a3com-huawei-splat-mix.mib
+a3com-huawei-isis-df13.mib
+a3com-huawei-entity-vendortype-oid.mib
+
+Add new MIBs
+a3com-huawei-storm-constrain.mib
+a3com-huawei-ip-address.mib
+
+20051215
+Changed MIBS
+a3com-huawei-oid.mib
+a3com-huawei-
+.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-device.mib
+
+Added new MIBS
+a3com-huawei-ifqos2.mib
+a3com-huawei-cbqos2.mib
+a3com-huawei-flowtemplate.mib
+a3com-huawei-qos-capability.mib
+
+
+2005-11-29
+a3com-huawei-atm-dxi.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-mstp.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-vocallhistory.mib
+rfc3813-mpls-lsr-std.mib
+a3com-huawei-oid.mib
+
+Add new MIBs
+rfc2213-integrated-services.mib
+rfc3289-diffserv.mib
+rfc3289-diffserv-dscp-tc.mib
+
+
+2005-11-17
+Changed MIBs
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-trap.mib
+a3com-huawei-voif.mib
+
+Add new MIBs
+a3com-huawei-ids.mib
+
+/*****************************************************************************/
+2005-11-1 15:00
+removed MIBs which has confirmed by Paola
+a3com-huawei-vo-aaa-client.mib
+a3com-huawei-vo-analog-if.mib
+a3com-huawei-vo-call-active.mib
+a3com-huawei-vo-call-history.mib
+a3com-huawei-vo-dial-control.mib
+a3com-huawei-vo-gk-client.mib
+a3com-huawei-vo-h323-call-stat.mib
+a3com-huawei-vo-if.mib
+
+Changed MIBs:
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-oid.mib
+a3com-huawei-port-security.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-ui-man.mib
+a3com-huawei-vodialcontrol.mib
+
+Added new MIBs:
+a3com-huawei-syslog.mib
+ieee80217-rpr.mib
+rfc3814-mpls-ftn-std.mib
+/************************************************************************************/
+2005-10-12 11:00
+Changed MIBs:
+a3com-huawei-flash-man.mib
+a3com-huawei-ipsec-monitor.mib
+a3com-huawei-rcr.mib
+a3com-huawei-oid.mib
+/************************************************************************************/
+2005-09-22 18:00
+Changed MIBs:
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-mpm.mib
+a3com-huawei-protocol-vlan.mib
+a3com-huawei-splat-mam.mib
+a3com-huawei-srm.mib
+
+Added new MIBs:
+a3com-huawei-cfcard.mib
+a3com-huawei-sna-dlsw-ext.mib
+a3com-huawei-subnet-vlan.mib
+rfc1747-sna-sdlc.mib
+rfc2024-dlsw.mib
+rfc3811-mpls-tc-std.mib
+rfc3812-mpls-te-std.mib
+rfc3813-mpls-lsr-std.mib
+rfc3815-mpls-ldp-std.mib
+/************************************************************************************/
+2005-09-06 18:00
+Changed MIBs:
+a3com-huawei-cbqos.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-oid.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-srm.mib
+a3com-huawei-userlog.mib
+
+Added new MIBs:
+a3com-huawei-dvpn.mib
+/************************************************************************************/
+2005-08-24 10:00
+Changed MIBs:
+a3com-huawei-splat-qos.mib
+
+Added new MIBs:
+rfc3419-transport-address.mib
+/************************************************************************************/
+2005-08-12 16:00
+Changed MIBs:
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-oid.mib
+a3com-huawei-sys-man.mib
+a3com-huawei-splat-vlan.mib
+
+Added new MIBs:
+a3com-huawei-dhcprelay.mib
+rfc3417-snmpv2-tm.mib
+/************************************************************************************/
+2005-7-26 15:00
+Changed MIBs:
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-oid.mib (only adjust history to snap to grid)
+a3com-huawei-splat-devm.mib
+a3com-huawei-splat-mstp.mib
+a3com-huawei-splat-rstp.mib
+ieee8021x.mib (unrelated compliance statements are removed to eliminate compiling/loading warning.
+               File format are ajusted and contents of the MIB are not changed.)
+
+Added new MIBs:
+a3com-huawei-atm-dxi.mib
+a3com-huawei-isis-df13.mib (This mib is extracted from draft-ietf-isis-wg-mib-13.txt and moved under
+                            private branch.)
+/**********************************************************************************/
+2005-7-12 14:48
+Changed MIBs:
+a3com-huawei-domain.mib
+a3com-huawei-nat.mib
+a3com-huawei-oid.mib
+a3com-huawei-qos.mib
+a3com-huawei-radius.mib
+a3com-huawei-mpls-vpn.mib
+
+Added new MIBs:
+a3com-huawei-gre.mib
+a3com-huawei-object-info.mib
+a3com-huawei-tunnel.mib
+rfc3595-ipv6-flow-label.mib used as IMPORTED MIB
+
+Remove MIBs:
+rfc3273-hc-rmon.mib, this MIB should not be provided at this time, so it is removed
+from baseline.
+/**********************************************************************************/
+2005-6-27 15:36
+Changed MIBs:
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-srm.mib
+rfc2925-disman-ping.mib
+
+Added new MIBs:
+a3com-huawei-dot3-efm-epon.mib
+a3com-huawei-efm-common.mib
+a3com-huawei-epon.mib
+a3com-huawei-epon-device.mib
+rfc2096-ip-forward.mib
+rfc2127-isdn.mib
+rfc3418-snmpv2.mib
+rfc3273-hc-rmon.mib
+/***************************************************************************/
+2005-06-13 09:24
+
+Changed MIB involved is:
+a3com-huawei-splat-vlan.mib
+a3com-huawei-mpls-vpn.mib
+a3com-huawei-ip.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-splat-igsp.mib
+
+Added new MIBs:
+rfc2933-igmp-std.mib
+a3com-huawei-rcr.mib
+
+/********************************************************************************************/
+
+2005-6-1 9:21
+Changed MIB involved is:
+a3com-huawei-cbqos.mib
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-dhcps.mib
+a3com-huawei-entity-verdortype-oid.mib
+a3com-huawei-oid.mib
+a3com-huawei-port-security.mib
+a3com-huawei-qos.mib
+a3com-huawei-qos-profile.mib
+a3com-huawei-radius.mib
+a3com-huawei-splat-igsp.mib
+a3com-huawei-ppp-over-sonet.mib
+rfc2851-inet-address.mib
+
+Added  MIB involved is:
+a3com-huawei-isdn.mib
+a3com-huawei-mpm.mib
+a3com-huawei-multicast.mib
+a3com-huawei-nat.mib
+a3com-huawei-ns.mib
+a3com-huawei-rrpp.mib
+a3com-huawei-trap.mib
+rfc2856-hcnum-tc.mib
+rfc3273-hc-rmon.mib
+rfc3414-snmp-usm.mib
+rfc3415-snmp-vacm.mib
+
+/*********************************************************************************************/
+2005-05-20
+Hello Paola,
+This is a new completed version of MIBs collection for 3Com.
+We send all of the MIBs including those not only for MONZA product, but also for other products.
+
+
+Changed MIBs involved are:
+a3com-huawei-oid.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-radius.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-srm.mib
+a3com-huawei-cbqos.mib
+a3com-huawei-entity-vendortype-oid.mib
+
+
+
+Added  MIBs involved are:
+
+a3com-huawei-ipx.mib
+a3com-huawei-unicast.mib
+a3com-huawei-voanalogif.mib
+a3com-huawei-vocallactive.mib
+a3com-huawei-vocallhistory.mib
+a3com-huawei-vodialcontrol.mib
+a3com-huawei-vodigitalif.mib
+a3com-huawei-vogeneral.mib
+a3com-huawei-vogkclient.mib
+a3com-huawei-voh323callstat.mib
+a3com-huawei-voif.mib
+a3com-huawei-vosip.mib
+a3com-huawei-vo-type.mib
+a3com-huawei-domain.mib
+
+/*********************************************************************************************/
+2005-4-25 13:52
+Fix root node bugs of IEEE8023-LAG-MIB
+
+Added new MIBs:
+    rfc3593-perfhist-tc.mib
+    rfc3705-hc-perfhist-tc.mib
+
+Changed MIBs include:
+    a3com.huawei.power.eth.ext.mib
+    a3com-huawei-mlsr.mib
+    a3com-huawei-entity-vendortype-oid.mib
+
+2005-4-19 15:25
+The file a3com-huawei-ftm.mib has been updated to V2.3
+rfc1253-ospf.mib is removed from baseline.
+
+2005-3-10 14:06
+Hello Paola,
+This is a new completed version of MIBs collection for 3Com.
+We send all of the MIBs including those not only for MONZA product, but also for other products.
+
+The main changes are referred to files as below.
+a3com-huawei-config-man.mib
+a3com-huawei-flash-man.mib
+a3com-huawei-mlsr.mib
+a3com-huawei-ndec.mib
+a3com-huawei-ping.mib
+These five MIBs are changed to avoid Copyright confliction with Cisco and you have agreed last time you came to Beijing.
+
+a3com-huawei-acl.mib
+a3com-huawei-entity-ext.mib
+a3com-huawei-oid.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-trng.mib
+These six MIBs are changed.  Please have a look in header section of the MIB file.
+
+a3com-huawei-poe-eth-ext.mib should be named as a3com-huawei-power-eth-ext.mib, I correct this file name error this time.  Please take a look.  Of course, this file is also updated.
+
+iana-ana-address-family-numbers.mib are updated with the lastest version of IANA.
+
+a3com-huawei-dldp.mib
+a3com-huawei-prot-priority-mib
+a3com-huawei-dhcpsnoop.mib
+a3com-huawei-ipa.mib
+These two MIBs are the new MIBs.
+
+a3com-huawei-vo-analog-if.mib
+a3com-huawei-vo-dial-control.mib
+These two MIBs are provided this time.
+
+a3com-huawei-rsa.mib
+a3com-huawei-ssh.mib
+Please remove these two MIBs from your bsaeline if you have taken them into your baseline, because we have not any plan to implement them.  We do not provide these two MIBs to 3Com this time and in future.
+
+
+Thanks
+Gao Long
+
+
+2005-2-1 18:02
+Hello Paola,
+This is a new completed version of MIBs collection for 3Com.
+We send all of the MIBs including those not only for MONZA product, but also for other products.
+
+The main changes are referred to files as below.
+a3com-huawei-cbqos.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-ftm.mib
+a3com-huawei-ip.mib
+a3com-huawei-mpls-ldp.mib
+a3com-huawei-ping.mib
+a3com-huawei-poe-eth-ext.mib
+a3com-huawei-port-security.mib
+a3com-huawei-qos.mib
+a3com-huawei-splat-devm.mib
+a3com-huawei-splat-igsp.mib
+a3com-huawei-splat-inf.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-splat-rstp.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-srm.mib
+a3com-huawei-if-ext.mib, this file may be sent to 3Com last time.
+
+All the changes are approved by 3Com through email or out of 3 days response rule.
+
+Please notice that we have updated a3com-huawei-splat-inf.mib and a3com-huawei-splat-vlan.mib.
+
+Cheers
+Gaolong
+
+
+2005-1-19 16:06
+Hi Paola,
+This is a new version of MIBs collection.
+
+The main changes are as follows in comparison with the last version collection.
+New MIBs are:
+    rfc1381-lapb.mib, this mib is consistent with RFC1381 and used for routers as I know so far.
+
+    a3com-huawei-t1.mib and a3com-huawei-e1.mib are new private MIBs used to describe E1/T1 card.
+    Our engineers sent them to 3Com review panel for review at mid December, but got no response from you,
+    so we have taken them into our baseline.
+
+    a3com-huawei-ike-monitor.mib and a3com-huawei-ipsec-monitor.mib are also new private MIBs.
+    Our engineers sent them to 3Com review panel for review at mid December, but got no response from you,
+    so we have taken them into our baseline.
+
+    a3com-huawei-ppp-over-sonet.mib is a new private MIB too. This MIB is used in switch products.
+    Our engineers sent them to 3Com review panel for review at mid December, but got no response from you,
+    so we have taken them into our baseline.
+
+    a3com-huawei-aal5.mib is a new private MIB used for ATM. This MIB is used in router products.
+    Our engineers sent them to 3Com review panel for review at November, but got no response from you,
+    so we have taken them into our baseline.
+
+    a3com-huawei-if-ext.mib is a new private MIB which is used as an extension of interface.
+    Our engineers sent them to 3Com review panel for review at mid December, but got no response from you,
+    so we have taken them into our baseline. At present only some router products support this MIB.
+
+    a3com-huawei-ntp.mib is a new private MIB which is reviewed and replied by you.
+
+MIBs modified are:
+    a3com-huawei-device.mib
+    a3com-huawei-entity-vendortype-oid.mib
+    a3com-huawei-ftm.mib
+
+Thanks
+Gao Long
+=========================================================================================================================
+
+2004-12-25 16:57
+Hi Paola,
+
+This is a new version collection of MIBs.
+The main changes comparing with the last version are as follows.
+Modified private MIBs involved are:
+    a3com-huawei-acl.mib
+    a3com-huawei-device.mib
+    a3com-huawei-entity-vendortype-oid.mib
+    a3com-huawei-oid.mib
+    a3com-huawei-ui-man.mib
+    a3com-huawei-splat-inf.mib
+    a3com-huawei-splat-qos.mib
+    a3com-huawei-vlan.mib
+
+Added private MIB involved is:
+       a3com-huawei-ip-broadcast.mib, which is baselined after 72 hours without your response.
+
+Cheers
+Gao Long
+
+=========================================================================================================================
+2004-12-14 14:34
+Hi, Paola,
+
+This is a new version collection of MIBs.
+The main changes comparing with the last version are as follows.
+Modified private MIBs involved are:
+    a3com-huawei-acl.mib
+    a3com-huawei-cbqos.mib
+    a3com-huawei-config-man.mib
+    a3com-huawei-device.mib
+    a3com-huawei-entity-vendortype-oid.mib
+    a3com-huawei-flash-man.mib
+    a3com-huawei-lag.mib
+    a3com-huawei-mlsr.mib
+    a3com-huawei-oid.mib
+    a3com-huawei-ping.mib
+    a3com-huawei-splat-rstp.mib
+    a3com-huawei-srm.mib
+    a3com-huawei-sys-man.mib
+    a3com-huawei-voice-vlan.mib
+
+Some public MIBs are also modified to be more similar to the standard MIBs.
+    rfc2618-radius-auth-client.mib
+    rfc2787-vrrp.mib
+Some public MIB file names are changed.
+    rfc1450-gentrap.mib change to rfc1450-snmpv2.mib
+    rfc1471-ppp.mib change to rfc1471-ppp-lcp.mib
+    rfc1472-ppp.mib change to rfc1473-ppp-ip.mib
+
+Cheers
+Gao Long
+
+=========================================================================================================================
+Hi, Paola,
+
+This is the another MIB collection after I sent to you in October.
+I list the files changed since last delivery as follow.
+a3com-huawei-config-man.mib
+a3com-huawei-device.mib
+a3com-huawei-entity-vendortype-oid.mib
+a3com-huawei-hgmp.mib
+a3com-huawei-oid.mib
+a3com-huawei-splat-mstp.mib
+a3com-huawei-splat-qos.mib
+a3com-huawei-splat-vlan.mib
+a3com-huawei-user.mib
+
+By the way, I will send you and your panel a mail because we have some blocks between JV and 3Com. We need a clean and clear way to communicate.
+
+Cheers
+Gao Long
+2004-11-04
+
+
+Below is the changes last time I sent to you. Just for tracking. You can ignore them.
+
+Main changes for private MIB files.
+1    Many MODULE-IDENTITY clause are relocated because the MODULE-IDENTITY macro MUST be invoked immediately after any IMPORTs statement.
+2    Remove chinese characters or substitute them with English words.
+3    Remove some adjacent hyphens because if more than two hyphens may cause some MIB tools fail to compile.
+4    Reloate MODULE-IDENTITY clause in some MIB files. Because MODULE-IDENTITY macro MUST be invoked immediately after any IMPORTs statement(RFC2576).
+5    Change some index object's MAX-ACCESS value to accessible-for-notify because they are used when sending trap.
+6    Change all underscores to hyphens because underscores are not allowed in MIB definition.
+7    Fix default value error for some MIB objects. Their DEFVAL do not consistent with their value range.
+8    Some MIB files are converted into SMIv2 format. ACCESS clause and STATUS clause are changed accordingly.
+9
+
+Changes for public MIB files.
+I don't add comments in these standard MIB files.
+1   Change ieee8023-lag.mib, move lagMIB MODULE-IDENTITY immediately after IMPORTS clause.
+2   Change isis.mib, move '{' and '}' from Description.
+    Change SYNTAX value of isisCircMeshGroup from Integer32 to Unsigned32, because the value range is from 1 to 4294967295.
+3    In rfc1471-ppp.mib, two objects, pppLinkStatusLocalMRU and pppLinkStatusRemoteMRU, have value range INTEGER(1..2147483648). As you know, INTEGER has the upper limit as 2147483647, so I don't know how to modify these two objects because this is from RFC1471 standard.
+    Please give us some advices.
+4    Change rfc1657-bgp4.mib, modify this file according to RFC standard. We modify TRAP-TYPE to NOTIFICATION-TYPE.
+5    Change rfc1724-rip.mib. In Rip2IfConfEntry definition, remove value range of rip2IfConfAuthKey. Because the range should be defined in rip2IfConfAuthKey definitioin. Some mib tools fail to compile if we do not remove it.
+6    Change rfc2674-qbridge.mib. Change SYNTAX of VlanIndex from INTEGER(0..4294967295) to Unsigned32 according to RFC2674, because (0..4294967295) exceeds upper limit of INTEGER.
+7    Change rfc2787-vrrp.mib. Change contents of vrrpTrapNewMaster and vrrpTrapAuthFailure to conform with the RFC standard.
+8    Change rfc2819-rmon.mib. We abstract all contents of the MIB from RFC2819 and replace with the new one.
+    What we support is listed in MIB Companion for products.
+
+If you load MIB files with openview, please do not load rfc1155.smi, rfc1212.smi and rfc1215.smi.
+HP openview can work properly without these files we send to you.
+
+
+Below is for myself track. Please ignore it.
+a3com-huawei-common.mib没有整干净。
+a3com-huawei-splat-inf.mib中有两个MIB MODULE-IDENTITY.应该被拆成3个mib文件。
+a3com-huawei-splat-mstp.mib中节点dot1dStpPort没有被引入.已经从bridge mib中引入。

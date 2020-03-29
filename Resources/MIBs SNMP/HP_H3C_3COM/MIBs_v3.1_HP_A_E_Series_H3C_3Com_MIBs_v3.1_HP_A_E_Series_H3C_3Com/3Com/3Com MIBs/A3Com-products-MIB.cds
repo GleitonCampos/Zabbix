@@ -1,0 +1,1016 @@
+นา-- **********************************************************************
+--      Copyright 3Com Limited. (1991 - 2010)
+-- **********************************************************************
+-- This is the 3Com Enterprise MIB.
+--
+-- 3com-045 lists 3Com product IDs, as returned by the
+-- mibII.system.sysObject MIB Object. sysObject IDs are used by Network
+-- Management applications to identify devices and must match exactly an
+-- assigned ID. New product and trap IDs are registered by sending an
+-- email to: 3COM_PRODUCT_OID_REQUESTS@3com.com
+-- 
+-- SysObject and trap ID guidelines are fully documented in 3com-368. 
+-- Below is a brief explanation.
+--
+-- 3com-045 contains all 3Com product IDs except for Superstack products,
+-- which are assigned from 3com-025.
+-- For example the sysoid for the Wireless
+-- Access Point 8000 is 1.3.6.1.4.1.43.1.20.1, derived as follows:
+--
+-- iso                  OBJECT IDENTIFIER ::= { 1 }
+-- org                  OBJECT IDENTIFIER ::= { iso 3 }
+-- dod                  OBJECT IDENTIFIER ::= { org 6 }
+-- internet             OBJECT IDENTIFIER ::= { dod 1 }
+-- private              OBJECT IDENTIFIER ::= { internet 4 }
+-- enterprises          OBJECT IDENTIFIER ::= { private 1 }
+-- a3Com                OBJECT IDENTIFIER ::= { enterprises 43 }
+-- products             OBJECT IDENTIFIER ::= { a3Com 1 }
+-- wirelessDevices      OBJECT IDENTIFIER ::= { products 20 }
+-- wLanAP8000           OBJECT IDENTIFIER ::= { wirelessDevices 1 }
+--
+--
+-- 3com-045 additionally contains device-specific MIBs.  These
+-- are top-level branches of private MIBs defined in other 3FCs.
+-- For example, the Access Pointer 8000 uses the private MIB branch:
+--
+-- wlan-mib            OBJECT IDENTIFIER ::= { a3Com 35 }
+--
+--
+--
+-- **********************************************************************
+-- 
+--
+-- Comments:            This defines the structure of the 3Com branch.
+--
+-- History:
+-- Date         Author          Reason for Change
+-- 1 Sep 94     Paul J Moran        Created
+-- 28 Nov 94    Paul J Moran        Added LinkSwitch100 OIDs
+-- 10 Jan 95    Ed Heiner           Added LANplex Systems MIB,
+--                                  LANplex Optional FDDI MIB,
+--                                  LANplex 2500/2016 sysOids, and
+--                                  new LANplex 6000 sysOids.
+-- 31 Jan 95    Paul J Moran        Added more LinkSwitch100 OIDs
+-- 21 Feb 95    Danny Propp         Added NCD products -
+--                                    New atm product group including
+--                                    CELLplex 7000,7200 OIDs.
+--                                    New linkSwitch500 and
+--                                    linkSwitch2700Atm OIDs.
+-- 27 Feb 95    David Chuang,Srinath Candadai
+--                                  Added FMS100(Fast Ethernet Hub) OIDs
+--
+-- 15 Mar 95    Kiho Yum            Added NSD products -
+--                                    NbroTrLarge, NbroTrHuge, mp6EthFl,
+--                                    ethV3, mp6EthFl, and ethV3Fl
+--
+--  8 May 95    Danny Propp         Added NCD product - LinkSwitch2700Tli.
+--                                  Updated LinkSwitch2700Atm's name.
+--                                  Added ncdMibs OID.
+--
+-- 15 May 95    Kiho Yum            Added NSD products -
+--                                    cs2x00to, cs2x00tlo, cs3x00to, cs3x00tlo
+--                                    series2500, series3000, nbroFw,
+--                                    added AA sw pkg to all brouter products
+--                                    added AB sw pkg to all brouter products
+--                                    added BF sw pkg to all brouter products
+--
+-- 16 May 95    Ed Heiner           Added SD products -
+--                                    lss2000, linkSwitch-2200-2,
+--                                    lanplex-60xx-System-2,
+--                                    lanplex-60xx-Chassis-2,
+--                                    lanplex-60xx-ESM-2,
+--                                    lanplex-60xx-EFSM-2
+--                                    Revised new switching module names
+--                                    (lps60xxFESM -> lps60xxEFSM).
+--
+-- 19 Jun 95    Ed Heiner           Added SD products -
+--                                    lanplex-2500-3, lanplex-2016-3, and
+--                                    linkSwitch-2200-3.
+--
+-- 22 Jun 95    David Chuang & Srinath Candadai, Added NAD products -
+--                                    FMS100 management only system
+--
+-- 26 Jun 95    Paul J Moran    Added linkBuilderPresley
+--                              rename linkSwitch100 to linkSwitch1000
+--                              Added linkSwitch3000
+--
+--  3 Jul 95    Ed Heiner           Added SD products -
+--                                    lanplex-60xx-System-3,
+--                                    lanplex-60xx-Chassis-3,
+--                                    lanplex-60xx-ESM-3, and
+--                                    lanplex-60xx-EFSM-3.
+-- 8 Aug 95     Paul J Moran
+-- rename linkBuilderPresley to officeStack-Hub8M
+--
+-- 28 Nov 95    Danny Propp           CELLplex7200 replaced by
+--                                      CELLplex7000-modules;
+--                                    New NCD CELLplex7000 modules added -
+--                                      - CELLplex7x00-moduleBridge
+--                                      - CELLplex7200-module
+--                                      - CELLplex7200F-module
+--                                      - CELLplex7400-module
+--
+-- 06 Dec 95    Kiho Yum              Added OIDs for NETBuilder
+--                                    Remote Office Token Ring Isdn
+--                                    products.  Added nbro numbers to
+--                                    OID descriptors.
+--
+-- 06 Dec 95    Kiho Yum              Swapped OIDs for nbroTrHuge and
+--                                    nbroTrIsdn
+--
+-- 30 Jan 96    Paul J Moran
+-- rename officeStack to officeConnect
+-- add extra linkSwitch3000 module
+--
+-- 6 Feb 96     Paul J Moran
+-- add linkSwitch1000MSH sysObjID
+--
+-- 08 Feb 96    Danny Propp           Changed all CELLplex names to cELLplex.
+--                                    Changed cELLplex7000 modules/cards
+--                                    names.
+--                                    Added cELLplex-7600card.
+--
+-- 13 Feb 96    Paul J Moran
+-- add superStack card ids
+--
+--
+-- 29 Feb 96  David Chuang & Srinath Candadai
+-- Added rptrGroupObjectID for FMS 100
+-- (100BaseT4) repeater.
+--
+-- 06 Mar 96    Kiho Yum
+-- Added OIDs for new NETBuilder
+-- ATM board, nbro2Eth, and nbro2EthIsdn.
+--
+-- 07 Mar 96 John Scano Added OIDs for
+--                                      TRSM Module
+--                                      TMM Module
+--                                      FSM Module
+--                                      SS-2
+--                              For agent revisions 4,5,6,7
+--
+-- 15 March 96 Paul J Moran
+-- Added linkswitch cards for the OnCore
+--
+-- 20 March 96 Paul J Moran
+-- ATMO module for superStack Switch1000/3000
+--
+-- 20 March 96 Kiho Yum               Added OIDs for new NETBuilder
+--                                    flat FDDI boards
+--
+-- 15 April 96 Paul J Moran
+-- Add oids for the LinkSwitch2000/Token Ring
+--
+-- 25 April 96 Paul J Moran
+-- Changed linkSwitch1000MSH to mshSwitch1005
+--
+-- 29 April 96 Paul J Moran
+-- Added main branch for the VLAN Server
+--
+-- 23 May 96 Kiho Yum
+-- Added main branch for terminal servers
+--
+-- 29 May 96 Kiho Yum
+-- Added product oids for Office Connect Routers
+--
+-- 3 June 96 Paul J Moran
+-- Added more linkswitch cards for the OnCore
+--
+-- 21June 96 Paul J Moran
+-- Added yet more linkswitch card ids for the OnCore
+-- Added sysObjectId for new SuperStack Desktop Switch
+--
+-- 8 July 1996 Paul J Moran
+-- Added card id for new SuperStack Desktop Switch
+--
+-- 6 September 1996 Paul J Moran
+-- Added card id for new SuperStack Switch 3000
+--
+-- 16 September 96 Paul J Moran
+-- Added more linkswitch cards for the OnCore
+--
+-- 11 October 96 Paul J Moran
+-- Added new mib branch for a new RPS product - rpsIIMgmtModule-mib
+--
+-- 7 Nov 96 Kiho Yum
+-- Added nb platform oids for nbr2e, nbr2eIsdn, and Office Conn. Family
+-- Also added board OIDs for nboc cpu boards.
+--
+-- 15 October 96 Evan McGinnis
+-- Corrected problems with linkSwitch/linkswitch naming
+-- confusion
+--
+--
+-- 6 November 96 Paul J Moran
+-- Added new OfficeConnet product, sysObjId and card types
+--
+-- 7 Nov 96 Kiho Yum
+-- Added nb platform oids for nbr2e, nbr2eIsdn, and Office Conn. Family
+-- Also added board OIDs for nboc cpu boards.
+--
+-- 20 Nov 96 Evan McGinnis
+-- Added ten100 card for LS1000 (As per Paul Moran's request)
+--
+-- 19 Dec 96 Evan McGinnis
+-- Added Power supply branch & Power supply (As per Paul Moran's request)
+--
+-- 21 Feb 97 Kiho Yum
+-- Added dpe Fw OID branch
+-- Also added brouterBoard OIDs for nbocST, nbocU, nboc56kCSU, nbocT1CSU,
+-- nboc1x1 and nboc2FlexWAN
+-- Also added brouterPlatform for ocT1CsuDsu.
+--
+-- 18 Mar 97 Evan McGinnis
+-- Added section for NOVA project
+--
+-- 17 Apr 97 Evan McGinnis
+-- Added branches for BAD (TDM)
+--
+-- 28 May 97 Kiho Yum
+-- Added sysOID, brouterBoard OIDs, brouterPlatform OIDs, &
+-- brouterBrdFwVers for Intrepid family of products.
+-- Added brouterBoard & brouterBrdFwVers OIDs for MbriSt, MbriU
+-- (8port ISDN boards) & QuadWAN
+--
+-- 3 Jun 97 Evan McGinnis/Paola Biti
+-- Added branch for SuperStack Switch 9000 Product and MIB
+--
+-- 4 Sep 97 Evan McGinnis/Srinath Candadai
+-- Added FMS100 cards
+--
+-- 30 Sep 97 Evan McGinnis
+-- Added Cable Modems
+-- Added Eclipse chassis and module definitions
+--
+-- 8 Oct 97 Evan McGinnis/Kiho Yum
+-- Added Office Connect 1x2
+-- Added new Brouter Board
+--
+-- 20 Oct 97 Evan McGinnis/Alan Peak
+-- Added EME board
+--
+-- 20 Nov 97 Evan McGinnis/Ahu Cohen
+-- Added cb7000sip
+--
+-- 20 Nov 97 Evan McGinnis/Trevor Warwick
+-- Added placeholder for OEM switch
+--
+-- 12 Dec 97 Evan McGinnis/Pei-Chen Lin
+-- Added Cable Modem MIB branch
+--
+-- 05 Jan 98 Evan McGinnis/Tim Mancour
+-- Added Switch 2000 OIDs
+--
+-- 08 Jan 98 Evan McGinnis/Tom McBrine
+-- Added new CB9000 layer-2 card
+--
+-- 17 Mar 98 Evan McGinnis/Ira Wolf/Pei-Chen Lin
+-- Replaced Cable Modem MIB/Inserted Switching
+-- System
+--
+-- 18 Mar 98 Evan McGinnis/Solomon Chulski
+-- Replace CB9000 Cell cards
+--
+-- 23 Mar 98 Evan McGinnis/Paul Moran
+-- Assigned SS Switch 1100/Router ID
+--
+-- 28 Mar 98 Kiho Yum
+-- Assigned Score IDs
+--
+-- 7 Apr 98 Evan McGinnis/Annie Dang
+-- Renamed atmAccess to pathBuilder
+--
+-- 28 Apr 98 Evan McGinnis/Doug Johnson
+-- Registered top level USR
+--
+-- 18 Jun 98 Evan McGinnis/Solomon Chulski
+-- New CB 7000 registrations
+--
+-- 18 Jun 98 Evan McGinnis/Prakash Banthia
+-- Edge Monitor MIB
+--
+-- 18 Jun 98 Evan McGinnis/Gilbert Yeung
+-- NIC/DMTF MIB
+--
+-- 22 Jun 98 Evan McGinnis/Paul Hardak
+-- 7000 Series Updates
+--
+-- 28 Aug 98 Evan McGinnis/Steve Chaump
+-- Added Grand Prix placeholder
+--
+-- 28 Aug 98 Evan McGinnis/Michael Melnicki
+-- Added Palm MIB subtree
+--
+-- 23 Nov 98 Evan McGinnis/Bill Friedeborn
+-- Added 9000 cards & 8 slot chassis
+--
+-- 14 Jan 99 Evan McGinnis
+-- Added 9000 card
+--
+-- 28 Jan 99 Evan McGinnis/David Plain
+-- Added Phones & 3300 Card subtree
+--
+-- 09 Mar 99 Evan McGinnis/Erez Geva
+-- Added new cb9000 cell card
+--
+-- 29 Mar 99 Evan McGinnis/Wai-Yin Cheung
+-- Added new brouter boads
+--
+-- 29 Mar 99 Evan McGinnis/Bill Friedeborn
+-- Additional 9000 Blades
+--
+-- 29 Mar 99 Evan McGinnis/Racheli Meiri
+-- 3300 ATM uplink
+--
+-- 8 Apr 99 Tom Butler/Bill Friedeborn
+-- Added cb9000-cards-fabric-36
+--
+-- 3 May 99 Tom Butler/Itsu Gross
+-- Added cELLplex-7800card, cELLplex-7900card
+--
+-- 12 May 99 Tom Butler/Wai-Yin Cheung
+-- Added scorePri4port.  Added product names to comments for OIDs
+-- under brouter and brouterPlatform.
+--
+-- 23 July 99 Tom Butler/Paola Biti
+-- Added superStackSwitch9100.
+--
+-- 25 Oct 99 Prathibha Nagvar/Joe Tsai
+-- Added wlan-mib under a3Com for Wireless LAN Access Point
+--
+-- 23 Dec 99 Prathibha Nagvar/Ian Patridge
+-- Added nbx100 for 3Com NBX 100 Call Processor Card, 3C10110
+-- Earlier, {phones 1} was assigned to livingston, but it has
+-- has been re-issued to nbx100 based on Ian Partridge's
+-- suggestion to re-use livingston OID for nbx100
+--
+-- 25th Jan 2000 Prathibha Nagvar/Paul Simunek
+-- Added icdSipProxy-mib for Session Initiation Protocol Proxy Server
+--
+-- 23rd Feb 2000 Prathibha Nagvar/Bill Friedeborn
+-- Added coreBuilder9000-app-cards for set of applications that are to be
+-- included on the NSM boards (NCD product) and residing in the CB9000 chassis
+--
+-- 25th Feb 2000 Prathibha Nagvar/Ian Partridge/David Plain
+-- Replaced phones with voice to give a orthogonal structure for voIP products
+-- including phones, gateways and call processors.
+--
+-- 28 Feb 2000 Bill Friedeborn
+-- Added CB9K 4 slot chassis, layer 3 fabric class, layer3 fabric modules
+-- 8 port and a 16 port
+-- 9 port L2 LX module,12 port L2 module, L3 18 port TX/FX,
+--
+-- 20 March 2000 Prathibha Nagvar/Paola Biti
+-- New OID for SuperStack Layer 4 switch Soyuz
+--
+-- 20 March 2000 Prathibha Nagvar/Neil Harrison
+-- Added banff under the products category. Banff is policy application
+-- for LAN edge solution. Banff will be used to create new objectClasses
+-- and attributeTypes for policy while being sure that the OIDs will not
+-- clash with any other objectClasses and attributeTypes that are stored
+-- within the LDAP directory.
+--
+-- May 10th 2000 Prathibha Nagvar/Eugene Lee
+-- Added sysOID for SuperStack II Router 400 product
+-- Added brouter board EasterRtr (for SuperStack II Router 400 product).
+-- Added brouterPlatform OIDs EasterST and EasterU
+-- Also assigned two oids Rtr400Hw and Rtr400Hs under EasterRtr
+--
+-- May 23rd 2000 Prathibha Nagvar/Ian Patridge
+-- Added intranetAppliances under products category
+-- Also changes phones which was assigned { products 17} to
+-- voice { products 17}
+--
+-- May 23rd 2000 Prathibha Nagvar/Mike Pan
+-- Added airConnect { products 20 }
+-- for AirConnect Wireless Products
+--
+-- June 1st 2000 Prathibha Nagvar/Ian Patridge
+-- Deleted banff sysoid since the project has been dropped
+-- Reused bnaff sysoid { products 18 } for intranetAppliances instead
+-- Added object identifiers for voice products
+--
+-- Sept 8th 2000 Paola Biti/Dave Bill/Phil Crooks/Julian Palmer
+-- added intranetAppliances.servers branch
+-- added storageServer, internetServer, emailServer, superStackwebCache
+-- changed firewallOne to superstackFireWall
+--
+-- Sept 20th 2000 Paola Biti/Tom Shippey
+-- renamed callProcessors 3 branch to superStackNbxCallProcessor
+-- added nbx250, nbx500, nbx750
+-- to this branch
+--
+-- Sept 21st 2000 Paola Biti/Julian Palmer
+-- renamed web caches superStackWebCache1000, superStac3WebCache3000
+-- October 11 2000 Paola Biti/Hazem Kabbara
+-- added Minicore II.
+-- merged the switches branch (renamed from grand-prix) from ESD file
+-- November 6 2000 Paola Biti/Jeff Young
+-- added Office Connect Gateway
+-- added products 19, the xDSL branch
+-- November 6 2000 Paola Biti/Bill Sheil
+-- added Office Connect NBX Call Processor
+-- Dec 05 2000 Paola Biti/Julian Palmer
+-- obsoleted web cache ids.  Do not reassign.
+-- added the webCache-mib proprietary branch
+-- Dec 05 2000 Paola Biti/Jeff Livermore
+-- added the xDSLCommon-mib proprietary branch
+-- Dec 06 2000 Paola Biti/Paul Moran
+-- added the superStackSwitch4300
+-- added the superStack4300-mib proprietary branch
+-- Dec 12 2000 Paola Biti/Amy Lingley
+-- added ldap branch under a3Com and assigned
+-- ldapGeneric for common ids and
+-- ldapCommWorks, specific branch for Carrier
+-- Jan 15 2001 Paola Biti/Chris Caldwell
+-- added ssServerLoadBalancers branch
+-- Jan 31 2001 Paola Biti/William Power
+-- added storageServer150
+-- Jan 31 2001 Paola Biti/Alex Finkelshtein
+-- added vCNMultiAccessConcentrator
+-- Jan 31 2001 Paola Biti/Jeff Livermore
+-- added aDSLRouterVoDSLPorts, aDSLRouterNoVoDSLPorts,
+-- gSHDSLRouterVoDSLPorts, gSHDSLRouterNoVoDSLPorts
+-- March 20th 2001 Paola Biti/Yuli Hou
+-- added wLanAP to wireless branch. Renamed airConnect branch 
+-- wirelessDevices
+-- March 26th 2001 Paola Biti/Davide Berti
+-- added SSL Acceleration Network Appliance
+-- April 26th 2001 Paola Biti/Yuli Hou
+-- corrected non-standard capitalisation for easterRouter and
+-- ssServerLoadBalancers branches
+-- April 27th 2001 Paola Biti/Yuli Hou
+-- added wLanAP6000 to wirelessDevices branch.
+-- July 2 2001 Paola Biti/Yuli Hou
+-- renamed wlanAP to wLanAP8000.
+-- renamed wlanAP-mib to wlan-mib.
+-- July 2 2001 Paola Biti
+-- Improved comments in header and copyright
+-- Oct 10 2001 Paola Biti
+-- Andy Everson - added cableDSLGateway, OfficeConnect Cable/
+-- DSL Gateway
+-- Oct 15 2001 Paola Biti
+-- Isabelle Lecoeuche - added cableDSLSecureGateway
+-- Jan 8th 2002 Paola Biti/Samer Darras
+-- added wLanAP2000 to wirelessDevices branch
+-- Jan 29th 2002 Paola Biti/Andy Everson
+-- added cableWirelessDSLGateway
+-- Jan 29th 2002 Paola Biti/Philippe Moutarlier
+-- added wLanWrkgrpBridge
+-- Mar 26th 2002 Paola Biti/Philippe Moutarlier
+-- added wLantoLanBridge
+-- Mar 26th 2002 Paola Biti/Manjunath Padmanabha
+-- added networkJacks branch (products 21) and nj200
+-- Jun 28th 2002 Paola Biti/Harry Bryant
+-- added firewall-mib (a3com 48)
+-- July 2 2002 Paola Biti/Samer Darras
+-- added wLanAP8500 (wirelessDevices 6)
+-- October 24 2002 Paola Biti/Hazem Kabbara
+-- added coreProducts (switches 4) and coreChassisSwitch4008
+-- October 25 2002 Paola Biti/James Freeman
+-- added wLanAPOfficeConnect11Mbps (wirelessDevices 7)
+-- October 25 2002 Paola Biti/Samer Darras
+-- added wLanAP8200 (wirelessDevices 8)
+-- November 15 2002 Paola Biti/Hazem Kabbara
+-- added coreChassis-mib (a3Com 45)
+-- December 01 2002 Les Bell/Steve Mancey
+-- added a3ComPoe-mib (a3Com 46)
+-- (from draft-ietf-hubmib-power-ethernet-mib-03.txt)
+-- January 08 2003 Paola Biti/Iain Kenney
+-- added a3ComXXX-mib (a3Com 47)
+-- added superStackSwitchXXX OBJECT IDENTIFIER ::= { hub 39 }
+-- March 11 2003 Paola Biti/Iain Kenney
+-- renamed a3Com496-mib (a3Com 47)
+-- March 12 2003 Paola Biti/Andy Everson
+-- cableWireless54Mbps11gDSLGateway { xDSL 10 }
+-- wLanAPOfficeConnect54Mbps11g (wirelessDevices 9}
+-- March 12 2003 Paola Biti/Mark Price
+-- wlanAP8700 (wirelessDevices 10}
+-- May 1 2003 Paola Biti/Harry Bryson
+-- coreWanRouter5200 { coreProducts 2 }
+-- May 7 2003 Paola Biti/Harry Bryson
+-- renamed coreProducts branch jvProducts
+-- added jvRouters { jvProducts 2 }
+-- deleted coreWanRouter5200
+-- added jvWanRouter5009 {jvRouters 1}
+-- added jvWanRouter5231 {jvRouters 2}
+-- added jvWanRouter5640 {jvRouters 3}
+-- added jvWanRouter5680 {jvRouters 4}
+-- added jvWanRouter3012 {jvRouters 5}
+-- added jvWanRouter3013 {jvRouters 6}
+-- added jvWanRouter3014 {jvRouters 7}
+-- added jvWanRouter3015 {jvRouters 8}
+-- May 31 2003 Paola Biti/Hazem Kabbara
+-- added jvSwitches branch  { jvProducts 3 }
+-- added jvSwitchxxxx       { jvSwitches 1 }
+-- May 31 2003 Paola Biti/Sarwar Raza
+-- added voiceCoreExchange-mib  { a3Com 48 }
+-- June 06 2003 Paola Biti/Iain Kenney
+-- renamed switch3824 { hub 39 }
+-- added switch3812   { hub 40 }
+-- June 06 2003 Paola Biti/Jon Burgess
+-- added switch3226 { hub 41 }
+-- added switch3250 { hub 42 }
+-- June 20 2003 Paola Biti/Isabelle Lecoeuche
+-- added xdslvpnFirewall   { xDSL 11 }
+-- added xdslsecureRouter  { xDSL 12 }
+-- June 20 2003 Paola Biti/Paul Moran
+-- changed coreChassis-mib (a3Com 45) to jv-mib
+-- July 3 2003 Paola Biti/Harry Bryson
+-- added jvWanRouter3016 {jvRouters 9}
+-- August 20 2003 Paola Biti/Mark Price
+-- added wlanAP8250 { wirelessDevices 11 }
+-- added wlanAP8750 { wirelessDevices 12 }
+-- added wlanAP7250 { wirelessDevices 13 }
+-- August 20 2003 Paola Biti/Manjunath Padmanabha
+-- added nj205 { networkJacks 2 }
+-- added nj220 { networkJacks 3 }
+-- added nj225 { networkJacks 4 }
+-- September 09 2003 Paola Biti/Hazem Kabbara
+-- renamed jvSwitchxxxx jvSwitch7700-8
+-- October 13 2003 Paola Biti/Malcolm Dodds
+-- added secureIX50  { fireWalls 2 }
+-- added secureIX100 { fireWalls 3 }
+-- added secureIX500 { fireWalls 4 }
+-- October 27 2003 Paola Biti/Jim Urso
+-- added switch4824 { hub 43 }
+-- added switch4848 { hub 44 }
+-- November 5 2003 Paola Biti/Dave Maxwell
+-- added securitySwitches branch{ products 22 }
+-- added securitySwitch6200 { securitySwitches 1 }
+-- added jvWanRouter3018 {  jvRouters 10}
+-- added jvWanRouter6040 {  jvRouters 11}
+-- added jvWanRouter6080 {  jvRouters 12}
+-- added jvWanRouter3030 {  jvRouters 13}
+-- added jvWanRouter3031 {  jvRouters 14}
+-- added jvWanRouter3032 {  jvRouters 15}
+-- added jvWanRouter3033 {  jvRouters 16}
+-- added jvWanRouter3034 {  jvRouters 17}
+-- November 5 2003 Paola Biti/Sharon Foster
+-- added jvSwitch7700-4 { jvSwitches 2 }
+-- November 14 2003 Paola Biti/Andy Everson
+-- added wireless11gAdslRouter { xDSL 13 }
+-- December 19 2003 Paola Biti/Tsingwei
+-- added  jvSwitch5500 { jvSwitches 3 }
+-- February 4 2004 Paola Biti/Jim Urso
+-- changes to integrate 3fc-496
+-- renamed switch4824 switch3870-24-port { hub 43 }
+-- renamed switch4848 switch3870-48-port { hub 44 }
+-- renamed superStackSwitch3824
+-- renamed superStackSwitch3812
+-- renamed a3Com496-mib a3Com496MIB
+-- February 4 2004 Paola Biti/Maurice Goodfellow
+-- wlan800  		{ wirelessDevices 14 }
+-- wlan4008 	      { wirelessDevices 15 }
+-- wlan4100 	      { wirelessDevices 16 }
+-- February 4 2004 Paola Biti/Sharon Foster
+-- added jvSwitch8807  { jvSwitches 4 }
+-- added jvSwitch8810  { jvSwitches 5 }
+-- added jvSwitch8814  { jvSwitches 6 }
+-- February 12 2004 Paola Biti/Peter Saunderson
+-- renamed jvSwitch5500 jvSwitch5570
+-- added jvSwitch5505-24e    { jvSwitches 7 }
+-- added jvSwitch5505-48e    { jvSwitches 8 }
+-- added jvSwitch4500-24si     { jvSwitches 9 }
+-- added jvSwitch4500-28tsi    { jvSwitches 10 }
+-- added jvSwitch4500-28si     { jvSwitches 11 }
+-- added jvSwitch4500-52si     { jvSwitches 12 }
+-- added jvSwitch4505-28ei     { jvSwitches 13 }
+-- added jvSwitch4505-52ei     { jvSwitches 14 }
+-- added jvSwitch4505-28pwrei  { jvSwitches 15 }
+-- added jvSwitch4505-52pwrei  { jvSwitches 16 }
+-- added jvSwitch4505-28fxei   { jvSwitches 17 }
+-- February 13 2004 Paola Biti/Sharon Foster
+-- added jvSwitch8807  { jvSwitches 4 }
+-- added jvSwitch8810  { jvSwitches 5 }
+-- added jvSwitch8814  { jvSwitches 6 }
+-- March 9 2004 Paola Biti/Jim Urso
+-- added switch3848 { hub 45 }
+-- April 1st 1 2004 Paola Biti/Dave Maxwell
+-- added jvRouter3035  { jvRouters 18 }
+-- added jvRouterxxxx  { jvRouters 19 }
+-- added jvRouteryyyy  { jvRouters 20 }
+-- added jvRouter5012  { jvRouters 21 }
+-- added jvRouter5232  { jvRouters 22 }
+-- added jvRouter5642  { jvRouters 23 }
+-- added jvRouter5682  { jvRouters 24 }
+-- April 1st 1 2004 Paola Biti/Manjunath Padmanabha
+-- added nj225FXSC { networkJacks 5 }
+-- added nj225FXST { networkJacks 6 }
+-- April 14th 2004 Peter Saunderson / Paola Biti 3Com 
+-- changed the names of
+-- 4500 and 5500 ei to 4505 and 5505 and 5700 is the 5570
+-- April 20th 2004 Paola Biti/Kent Lin
+-- added wlan80211agWBridge OBJECT IDENTIFIER ::= { wirelessDevices 17 }
+-- May 4th 2004 Paola Biti/Mike Corrigan
+-- added a3ComLdapVcx OBJECT IDENTIFIER ::= { ldap3Com 3 }
+-- May 4th 2004 Paola Biti/Paola Biti
+-- added a3ComEntityIdentifier-mib OBJECT IDENTIFIER ::= { a3Com 49 }
+-- May 4th 2004 Paola Biti/Maurice Goodfellow
+-- added a3ComTrpz-mib OBJECT IDENTIFIER ::= { a3Com 50 }
+-- May 28th 2004 Paola Biti/Harry Bryson
+-- secureIX3100-10    OBJECT IDENTIFIER ::= { fireWalls 2 }
+-- secureIX3100-50    OBJECT IDENTIFIER ::= { fireWalls 3 }
+-- secureIX3100       OBJECT IDENTIFIER ::= { fireWalls 4 }
+-- secureIX4100       OBJECT IDENTIFIER ::= { fireWalls 5 }
+-- secureIX5100       OBJECT IDENTIFIER ::= { fireWalls 6 }
+-- May 28th 2004 Paola Biti/Maurice Goodfellow
+-- changed wlan800  to	wlanWXR104
+-- changed wlan4008 to	wlanWX1108
+-- changed wlan4100 to	wlanWX4400
+-- June 2nd Paola Biti/Manjunath Padmanabha
+-- a3ComNetworkJack-mib    OBJECT IDENTIFIER ::= { a3Com 51 }
+-- June 4th Paola Biti/Peter Saunderson
+-- jvSwitch5500G-ei-24           OBJECT IDENTIFIER ::= { jvSwitches 7 }
+-- jvSwitch5500G-ei-48           OBJECT IDENTIFIER ::= { jvSwitches 8 }
+-- jvSwitch5500-si-24          OBJECT IDENTIFIER ::= { jvSwitches 9 }
+-- jvSwitch5500-si-28t         OBJECT IDENTIFIER ::= { jvSwitches 10 }
+-- jvSwitch5500-si-28          OBJECT IDENTIFIER ::= { jvSwitches 11 }
+-- jvSwitch5500-si-52          OBJECT IDENTIFIER ::= { jvSwitches 12 }
+-- jvSwitch5500-ei-28          OBJECT IDENTIFIER ::= { jvSwitches 13 }
+-- jvSwitch5500-ei-52          OBJECT IDENTIFIER ::= { jvSwitches 14 }
+-- jvSwitch5500-eipwr-28       OBJECT IDENTIFIER ::= { jvSwitches 15 }
+-- jvSwitch5500-eipwr-52       OBJECT IDENTIFIER ::= { jvSwitches 16 }
+-- jvSwitch5500-ei-28fx        OBJECT IDENTIFIER ::= { jvSwitches 17 }
+-- July 19th 2004 Paola Biti/Kent Lin
+-- wlan11gOutdoorBtoBBridge    OBJECT IDENTIFIER ::= { wirelessDevices 18 }
+-- wlan11gIndoorBtoBBridge     OBJECT IDENTIFIER ::= { wirelessDevices 19 }
+-- July 22nd 2004 Paola Biti/Paola Biti
+-- modified jvswitch5700 to jvSwitch5500-MC6-EI
+-- July 26 2004 Paola Biti/Maurice Goodfellow
+-- wlanWX1108 renamed wlanWX1206
+-- September 4th Paola Biti/Peter Saunderson
+-- switch3228           OBJECT IDENTIFIER ::= { hub 46}
+-- switch3252           OBJECT IDENTIFIER ::= { hub 47}
+-- November 16th 2004 Paola Biti/Tom Kinahan
+-- wlanAP11gPoE          OBJECT IDENTIFIER ::= { wirelessDevices 20 }
+-- November 17th 2004 Paola Biti/Anne Pelagatti
+-- nbxv3000   OBJECT IDENTIFIER ::= { callProcessors 5}
+-- November 30th 2004 Paola Biti/Sarwar Raza
+-- renamed phone branches
+-- basicPhone               OBJECT IDENTIFIER ::= { phones 1 }
+-- businessPhone            OBJECT IDENTIFIER ::= { phones 2 }
+-- executivePhone           OBJECT IDENTIFIER ::= { phones 3 }
+-- wirelessPhone            OBJECT IDENTIFIER ::= { phones 4 }
+-- added business phones
+-- bp3104ProfessionalPhone OBJECT IDENTIFIER ::= { businessPhone 1 }
+-- December 21st 2004 Paola Biti/Alan Miano
+-- added root mib for wlanAP11gPoE
+-- a3Com549-mib		OBJECT IDENTIFIER ::= { a3Com 52 }
+-- January 18th 2005 Paola Biti/Kevin Holohan
+-- Baseline Switch 2226-PWR Plus
+-- switch2226PwrPlus  OBJECT IDENTIFIER ::= { hub 48 }
+-- January 26th 2005 Paola Biti/Kevin Holohan
+-- switch2226Plus  OBJECT IDENTIFIER ::= { hub 49 }
+-- switch2250Plus  OBJECT IDENTIFIER ::= { hub 50 }
+-- January 26th 2005 Paola Biti/peter Saunderson
+-- jvSwitch5500GEiSfp24  OBJECT IDENTIFIER ::= { jvSwitches 18 }
+-- February 18th 2005 Ian Macpherson/Paola Biti
+-- switch3870x     OBJECT IDENTIFIER ::= { hub 51 }
+-- March 2nd 2005 Lee Walker/Kent Lin
+-- wlanAP8850      OBJECT IDENTIFIER ::= { wirelessDevices 21 }
+-- March 15th 2005 Paola Biti/Kevin Holohan
+-- replaced lost identifiers
+-- switch9              OBJECT IDENTIFIER ::= { hub 52}
+-- switch9FX            OBJECT IDENTIFIER ::= { hub 53}
+-- March 21st 2005 Paola Biti
+-- jvSwitch7750-4              OBJECT IDENTIFIER ::= { jvSwitches 19 }
+-- jvSwitch7750-7              OBJECT IDENTIFIER ::= { jvSwitches 20 }
+-- April 6th 2005 Paola Biti/Richard Li
+-- jvSwitch4500-26                OBJECT IDENTIFIER ::= { jvSwitches 21 }
+-- jvSwitch4500-50                OBJECT IDENTIFIER ::= { jvSwitches 22 }
+-- jvSwitch4500-pwr-26            OBJECT IDENTIFIER ::= { jvSwitches 23 }
+-- jvSwitch4500-pwr-50            OBJECT IDENTIFIER ::= { jvSwitches 24 }
+-- April 6th 2005 Paola Biti/Allen Lo
+-- nj240FXSC   OBJECT IDENTIFIER ::= { networkJacks 7 }
+-- nj240FXST   OBJECT IDENTIFIER ::= { networkJacks 8 }
+-- nj240FXLC   OBJECT IDENTIFIER ::= { networkJacks 9 }
+-- May 6th 2005 Paola Biti/James Hwang
+-- wireless11gAdslFirewallRouterA (Jerry2)    OBJECT IDENTIFIER ::= { xDSL 14 }
+-- wireless11gAdslFirewallRouterB (Jerry2)    OBJECT IDENTIFIER ::= { xDSL 15 }
+-- May 16th 2005 Paola Biti/Kevin Holohan
+-- switch2816           OBJECT IDENTIFIER ::= { hub 54}
+-- May 25th 2005 Paola Biti/Kevin Holohan
+-- switch2824           OBJECT IDENTIFIER ::= { hub 55}
+-- Jun 15th 2005 Paola Biti/Paola Biti
+-- jvSwitch7750-8           OBJECT IDENTIFIER ::= { jvSwitches 25 }
+-- Jul 14th 2005 Paola Biti/Sarwar Raza
+-- applicationModules      OBJECT IDENTIFIER ::= { voice 4 }
+-- ipTelecommuterModule    OBJECT IDENTIFIER ::= { applicationModules 1 }
+-- Jul 14th 2005 Paola Biti/Paola Biti
+-- jvSwitch8800-poe        OBJECT IDENTIFIER ::= { jvSwitches 26 }
+-- July 26th 2005 Paola Biti/Kevin Holohan
+-- renamed switch2816 switch2816SfpPlus
+-- September 06th 2005 Paola Biti/Peter Saunderson
+-- jvSwitch4200G-12             OBJECT IDENTIFIER ::= { jvSwitches 27 }
+-- jvSwitch4200G-24             OBJECT IDENTIFIER ::= { jvSwitches 28 }
+-- jvSwitch4200G-48             OBJECT IDENTIFIER ::= { jvSwitches 29 }
+-- jvSwitch4500G-24             OBJECT IDENTIFIER ::= { jvSwitches 30 }
+-- jvSwitch4500G-48             OBJECT IDENTIFIER ::= { jvSwitches 31 }
+-- jvSwitch4500G-24-PWR         OBJECT IDENTIFIER ::= { jvSwitches 32 }
+-- jvSwitch4500G-48-PWR         OBJECT IDENTIFIER ::= { jvSwitches 33 }
+-- September 07th 2005 Paola Biti/Neil Stevenson
+-- a3ComLdapSecurityProfile       OBJECT IDENTIFIER ::= { ldap3Com 4 }
+-- October 25th 2005 Paola Biti/Kiran Thummalapalli
+-- added root mib for NBX
+-- a3comNbxMIB	OBJECT IDENTIFIER ::= { a3Com 53 }
+-- November 02nd 2005, Paola Biti/Fritz Reeve
+-- nbxv3000Bri             OBJECT IDENTIFIER ::= { callProcessors 6 }
+-- nbxv3001                OBJECT IDENTIFIER ::= { callProcessors 7 }
+-- nbxv3001R               OBJECT IDENTIFIER ::= {nbxv3001 1}
+-- nbxv3001Ana             OBJECT IDENTIFIER ::= {nbxv3001 2}
+-- nbxv3001Bri             OBJECT IDENTIFIER ::= {nbxv3001 3}
+-- nbxv3001FxoFxsT1        OBJECT IDENTIFIER ::= {nbxv3001 4}
+-- nbxv3001FxoFxsE1        OBJECT IDENTIFIER ::= {nbxv3001 5}
+-- December 08th 2005 Paola Biti/Paola Biti
+-- jvRouter6040rpu2           OBJECT IDENTIFIER ::= {  jvRouters 25 }
+-- jvRouter6080rpu2           OBJECT IDENTIFIER ::= {  jvRouters 26 }
+-- jvRouter3040               OBJECT IDENTIFIER ::= {  jvRouters 27 }
+-- jvRouter3041               OBJECT IDENTIFIER ::= {  jvRouters 28 }
+-- jvRouter3042               OBJECT IDENTIFIER ::= {  jvRouters 29 }
+-- jvRouter3043               OBJECT IDENTIFIER ::= {  jvRouters 30 }
+-- jvRouter3040e              OBJECT IDENTIFIER ::= {  jvRouters 31 }
+-- jvRouter3041e              OBJECT IDENTIFIER ::= {  jvRouters 32 }
+-- jvRouter3036               OBJECT IDENTIFIER ::= {  jvRouters 33 }
+-- January 31 2006, Paola Biti/Maurice Goodfellow
+-- wlanWX2200            OBJECT IDENTIFIER ::= { wirelessDevices 22 }
+-- wlan80211agWBridge
+-- March 07 2006, Paola Biti/Paola Biti
+-- jvSwitch5500G-VI-24            OBJECT IDENTIFIER ::= { jvSwitches 34 }
+-- jvSwitch5500G-VI-48            OBJECT IDENTIFIER ::= { jvSwitches 35 }
+-- jvSwitch5500G-VI-24-PWR        OBJECT IDENTIFIER ::= { jvSwitches 36 }
+-- jvSwitch5500G-VI-48-PWR        OBJECT IDENTIFIER ::= { jvSwitches 37 }
+-- jvSwitch5500G-VI-24-SFP        OBJECT IDENTIFIER ::= { jvSwitches 38 }
+-- 25th April 2006 Chris Saxton/Chris Saxton
+-- switch2848SfpPlus       	 OBJECT IDENTIFIER ::= { hub 56 }
+-- switch2226Plus2             OBJECT IDENTIFIER ::= { hub 57 }
+-- switch2250Plus2             OBJECT IDENTIFIER ::= { hub 58 }
+-- switch2426PwrPlus           OBJECT IDENTIFIER ::= { hub 59 }
+-- wlanAP8760                  OBJECT IDENTIFIER ::= { wirelessDevices 23 }
+--
+-- Added new root MIB for Accton AP8760 private MIB.
+-- wlan-mib2                   OBJECT IDENTIFIER ::= { a3Com 54 }
+-- 27th April 2006, Chris Saxton/Chris Saxton
+-- wlanUnifiedGigWirelessPoE24 OBJECT IDENTIFIER ::= { wirelessDevices 24 }
+--
+-- Extended wlan-mib2 branch to add product level for future wlan products
+--
+-- ap8760                    OBJECT IDENTIFIER ::= { wlan-mib2 1 }
+-- 3rd May 2006, Chris saxton
+-- wlanAP7760                OBJECT IDENTIFIER ::= { wirelessDevices 25 }
+--
+-- 25th May 2006, Chris Saxton
+-- wlan11agOutdoorBtoBBridge  OBJECT IDENTIFIER ::= { wirelessDevices 26 }
+-- June 02 2006, Paola Biti/Daniel Tiew
+-- jvRouter3720               OBJECT IDENTIFIER ::= {  jvRouters 34 }
+-- jvRouter3740               OBJECT IDENTIFIER ::= {  jvRouters 35 }
+-- jvRouter5701               OBJECT IDENTIFIER ::= {  jvRouters 36 }
+-- jvRouter5720               OBJECT IDENTIFIER ::= {  jvRouters 37 }
+-- jvRouter5740               OBJECT IDENTIFIER ::= {  jvRouters 38 }
+-- jvRouter5760               OBJECT IDENTIFIER ::= {  jvRouters 39 }
+-- jvRouter6740               OBJECT IDENTIFIER ::= {  jvRouters 40 }
+-- jvRouter6760               OBJECT IDENTIFIER ::= {  jvRouters 41 }
+-- June 27th 2006,  Chris Saxton
+-- wlanUnifiedGigWirelessPoE8      OBJECT IDENTIFIER ::= { wirelessDevices 27 }
+-- June
+-- June 27th 2006, Paola Biti
+-- jvRouter5720pwr             OBJECT IDENTIFIER ::= {  jvRouters 42}
+-- jvRouter5740pwr             OBJECT IDENTIFIER ::= {  jvRouters 43 }
+-- jvRouter5760pwr             OBJECT IDENTIFIER ::= {  jvRouters 44 }
+-- 23 august 2006, Paola Biti
+-- jvSwitchapplicationmodules  OBJECT IDENTIFIER ::= { jvProducts 4 }
+-- ipsec8800		      OBJECT IDENTIFIER ::= { jvSwitchapplicationmodules 1 }
+-- nam8800		      OBJECT IDENTIFIER ::= { jvSwitchapplicationmodules 2 }
+-- firewall8800		      OBJECT IDENTIFIER ::= { jvSwitchapplicationmodules 3 }
+-- vpls8800		      OBJECT IDENTIFIER ::= { jvSwitchapplicationmodules 4 }
+-- 9 September 2006, Paola Biti, YangGongMing
+-- jvSwitch8807vrp5            OBJECT IDENTIFIER ::= { jvSwitches 39 }
+-- jvSwitch8810vrp5            OBJECT IDENTIFIER ::= { jvSwitches 40 }
+-- jvSwitch8814vrp5            OBJECT IDENTIFIER ::= { jvSwitches 41 }
+-- 13 September 2006, Colin Currie
+-- zakim2                  OBJECT IDENTIFIER ::= { wlan-mib2 2 }
+--
+-- 2nd October, 2006, Chris saxton/Roshan Thekkekunnel
+-- smartswitch2916SFPPlus           OBJECT IDENTIFIER ::= { hub 60 }
+-- smartswitch2924SFPPlus           OBJECT IDENTIFIER ::= { hub 61 }
+--
+-- Oct 24th Chris Saxton/Bob Burrill
+-- wireless11gAdslFirewallRouter108A (SuperGerry)OBJECT IDENTIFIER ::= { xDSL 16 }
+-- wireless11gAdslFirewallRouter108B (SuperGerry)OBJECT IDENTIFIER ::= { xDSL 17 }     
+--
+-- 13th December, 2006, Chris Saxton/Kevin Holohan
+-- Renamed new switch2816SFPPLUS to smartswitch2916SFPPlus 
+-- (Marketing name change pre-release) 
+-- Renamed new switch2824SFPPLUS to smartswitch2924SFPPlus 
+-- (Marketing name change pre-release)
+--
+-- smartswitch2948SFPPlus        OBJECT IDENTIFIER ::= { hub 62 } 
+-- smartswitch2924PWRPlus        OBJECT IDENTIFIER ::= { hub 63 }
+-- 
+-- 8th January, 2007 Paola Biti/Martin Hopkins
+-- The following identifiers are assigned to non Tipping Point XSeries
+-- xSeries            OBJECT IDENTIFIER ::= { intranetAppliances 5 }
+-- x506		      OBJECT IDENTIFIER ::= { xSeries 1 }
+-- x525User           OBJECT IDENTIFIER ::= { xSeries 2 }
+-- x5Unlimited        OBJECT IDENTIFIER ::= { xSeries 3 }   
+-- 16th January, 2007, Chris Saxton/Kevin Holohan
+--
+-- officeConnect-MngGigPoe     OBJECT IDENTIFIER ::= { hub 64 }    
+-- 12 March 2007, Colin Currie
+-- Added a branch for the generic wireless AP configuration MIB, 3FC646
+-- apConfigMib             OBJECT IDENTIFIER ::= { wlan-mib2 2 }
+-- 20th March 2007, Chris Saxton
+-- changed name of officeConnect-MngGigPoe to smartswitch2910PWRPlus
+-- 23 March 2007, Paola Biti/Richard Li
+-- jvSwitch4210-9         OBJECT IDENTIFIER ::= { jvSwitches 42 }
+-- jvSwitch4210-18        OBJECT IDENTIFIER ::= { jvSwitches 43 }
+-- jvSwitch4210-26        OBJECT IDENTIFIER ::= { jvSwitches 44 }
+-- jvSwitch4210-50        OBJECT IDENTIFIER ::= { jvSwitches 45 }
+-- jvSwitch4210-9-pwr     OBJECT IDENTIFIER ::= { jvSwitches 46 }
+-- jvSwitch4210-18-pwr    OBJECT IDENTIFIER ::= { jvSwitches 47 }
+-- jvSwitch4210-26-pwr    OBJECT IDENTIFIER ::= { jvSwitches 48 }
+-- 26th March 2007, Chris Saxton
+-- changed name of smartswitch2910PWRPlus to officeConnectMngGigPWR10
+-- 30th March 2007, Chris Saxton  
+-- Jasmine2
+-- wireless11gCableFirewallRouter54  OBJECT IDENTIFIER ::= { xDSL 18 }
+-- wireless11gCableFirewallRouter108 OBJECT IDENTIFIER ::= { xDSL 19 }  
+-- 3rd May 2007, Chris Saxton/Jeff Schwartz
+--  Airprotect WLAN IPS system MIB 
+-- a3airprotect            OBJECT IDENTIFIER ::= { a3Com 55 } 
+-- 9th May 2007, Paola Biti/Paola Biti
+-- jvSwitch4200G-24PWR             OBJECT IDENTIFIER ::= { jvSwitches 49 }
+-- 25th October 2007, Paola Biti/Paola Biti
+-- jvSwitch7904          OBJECT IDENTIFIER ::= { jvSwitches 50 }
+-- jvSwitch7905          OBJECT IDENTIFIER ::= { jvSwitches 51 }
+-- jvSwitch7908          OBJECT IDENTIFIER ::= { jvSwitches 52 }
+-- jvSwitch7908Vertical  OBJECT IDENTIFIER ::= { jvSwitches 53 }
+-- jvSwitch7912          OBJECT IDENTIFIER ::= { jvSwitches 54 }
+-- 8th November 2007, Chris Saxton
+-- wlanIPS6100           OBJECT IDENTIFIER ::= { wirelessDevices 28 }  
+--
+-- 30th November 2007.  Chris Saxton/John Pacheco
+-- wlanWX5500-OSM       OBJECT IDENTIFIER ::= { wirelessDevices 29 }
+-- 
+-- 5th December, 2007.	Chris Saxton/Simon <zhang_haitao@h3c.com>-- 
+-- Pagoda H3C Wireless Switches and AP
+-- wlanWLC5002			OBJECT IDENTIFIER ::= { wirelessDevices 30 }  
+-- wlanWLC6100-Master	OBJECT IDENTIFIER ::= { wirelessDevices 31 }
+-- wlanWLC6100-Switch	OBJECT IDENTIFIER ::= { wirelessDevices 32 }
+-- 10th December 2007. Paola Biti/Doug Hyde
+-- renamed 5500VI to 4800
+-- from:
+-- jvSwitch5500G-VI-24         OBJECT IDENTIFIER ::= { jvSwitches 34 }
+-- jvSwitch5500G-VI-48         OBJECT IDENTIFIER ::= { jvSwitches 35 }
+-- jvSwitch5500G-VI-24-PWR     OBJECT IDENTIFIER ::= { jvSwitches 36 }
+-- jvSwitch5500G-VI-48-PWR     OBJECT IDENTIFIER ::= { jvSwitches 37 }
+-- jvSwitch5500G-VI-24-SFP     OBJECT IDENTIFIER ::= { jvSwitches 38 }
+-- to: 
+-- jvSwitch4800G24Port         OBJECT IDENTIFIER ::= { jvSwitches 34 }
+-- jvSwitch4800G48Port         OBJECT IDENTIFIER ::= { jvSwitches 35 }
+-- jvSwitch4800GPWR24Port      OBJECT IDENTIFIER ::= { jvSwitches 36 }
+-- jvSwitch4800GPWR48Port      OBJECT IDENTIFIER ::= { jvSwitches 37 }
+-- jvSwitch4800G24PortSFP      OBJECT IDENTIFIER ::= { jvSwitches 38 }
+-- 10th December 2007. Paola Biti/Peter Doggart
+-- jv Open system networking modules
+-- jvOsms                      OBJECT IDENTIFIER ::= { jvProducts 5 }
+-- jvOsm64                     OBJECT IDENTIFIER ::= { jvOsms 1 }
+-- jvOsm128                    OBJECT IDENTIFIER ::= { jvOsms 2 }
+-- 20th December 2007. Paola Biti/Zhangshilin
+-- jvOsm64-5800                OBJECT IDENTIFIER ::= { jvOsms 1 }
+-- jvOsm128-5800               OBJECT IDENTIFIER ::= { jvOsms 2 }
+-- jvOsm64M-5800               OBJECT IDENTIFIER ::= { jvOsms 3 }
+-- 9th January 2008, Chris Saxton/John Pacheco
+-- 3Com Baseline Managed Gigabit PoE Switch 3124 3CRBLMG24  
+-- baselinePoESwitch3524		OBJECT IDENTIFIER ::= { hub 65 } 
+-- 9th January 2008, Chris Saxton/Kevin Holohan
+-- 3Com Baseline Switch 2226-SFP Plus	Voyager V  3CBLSF26		
+-- baseline2226SFPPlus			OBJECT IDENTIFIER ::= { hub 66 }
+-- 3Com Baseline Switch 2426-PWR Plus	Polar III  3CBLSF26PWR
+-- baseline2426PWRPlus			OBJECT IDENTIFIER ::= { hub 67 }
+-- 3Com Baseline Switch 2250-SFP Plus	Mariner V 3CBLSF50
+-- baseline2250SFPPlus			OBJECT IDENTIFIER ::= { hub 68 }
+-- 15th January 2008 Paola Biti/Peter Doggart
+-- jvSwitch5800GT48PortFlex    OBJECT IDENTIFIER ::= { jvSwitches 55 }
+-- jvSwitch5800XG14PortFlex    OBJECT IDENTIFIER ::= { jvSwitches 56 }
+-- jvSwitch5800GTPWR24Port     OBJECT IDENTIFIER ::= { jvSwitches 57 }
+-- jvSwitch5800GTPWR48Port     OBJECT IDENTIFIER ::= { jvSwitches 58 }
+-- jvSwitch5800GT24PortSFP     OBJECT IDENTIFIER ::= { jvSwitches 59 }   
+-- 21st January 2008 Chris Saxton/John Pacheco
+--  3Com IntelliJack NJ1000
+-- nj1000					OBJECT IDENTIFIER ::= { networkJacks 10 }
+-- 23rd January 2008 Chris Saxton/John Pacheco
+--  3Com Wireless 9550 Dual Radio 11n PoE Access Point 3CRWE955075     
+--  3Com Wireless 9150 11n PoE Access Point 3CRWE915075
+--  wlanAP9550				OBJECT IDENTIFIER ::= { wirelessDevices 33 }
+--  wlanAP9150				OBJECT IDENTIFIER ::= { wirelessDevices 34 }
+-- 25th January 2008 Chris Saxton/Tom Kinahan/Kevin Holohan
+-- 3CBLSF26-A		H3C Baseline Switch 2226-SFP Plus    
+-- 3CBLSF26PWR	-A	H3C Baseline Switch 2426-PWR Plus 
+-- 3CBLSF50-A		H3C Baseline Switch 2250-SFP Plus 
+-- jvbaseline2226SFPPlus		OBJECT IDENTIFIER ::= { jvSwitches 60 }
+-- jvbaseline2426PWRPlus		OBJECT IDENTIFIER ::= { jvSwitches 61 }
+-- jvbaseline2250SFPPlus		OBJECT IDENTIFIER ::= { jvSwitches 62 }
+-- 1st February 2008, Paola Biti/Paola Biti
+-- modified 7900E labels, from
+-- jvSwitch7904          OBJECT IDENTIFIER ::= { jvSwitches 50 }
+-- jvSwitch7905          OBJECT IDENTIFIER ::= { jvSwitches 51 }
+-- jvSwitch7908          OBJECT IDENTIFIER ::= { jvSwitches 52 }
+-- jvSwitch7908Vertical  OBJECT IDENTIFIER ::= { jvSwitches 53 }
+-- jvSwitch7912          OBJECT IDENTIFIER ::= { jvSwitches 54 }
+-- to:
+-- jvSwitch7902E          OBJECT IDENTIFIER ::= { jvSwitches 50 }
+-- jvSwitch7903E          OBJECT IDENTIFIER ::= { jvSwitches 51 }
+-- jvSwitch7906E          OBJECT IDENTIFIER ::= { jvSwitches 52 }
+-- jvSwitch7906EV         OBJECT IDENTIFIER ::= { jvSwitches 53 }
+-- jvSwitch7910E          OBJECT IDENTIFIER ::= { jvSwitches 54 }
+-- 3th March, 2008 Chris Saxton/Roshan Thekkekunnel/Kevin Holohan 
+-- Cromarty is OfficeConnect 8 port gig switch
+-- IronBridge is OfficeConnect 8 port fast ethernet with PoE            
+-- officeconnect-Gig8			OBJECT IDENTIFIER ::= { hub 69 }   
+-- officeconnect-PWR8			OBJECT IDENTIFIER ::= { hub 70 } 
+-- 28th March 2008, Paola Biti/Paola Biti
+-- jvSwitch9505E               OBJECT IDENTIFIER ::= { jvSwitches 63 }
+-- jvSwitch9508E-V             OBJECT IDENTIFIER ::= { jvSwitches 64 }
+-- jvSwitch9512E               OBJECT IDENTIFIER ::= { jvSwitches 65 }
+-- 16th April 2008, Chris Saxton/Betty Chan/Simon (H3C)
+-- 7900 wireless blade
+-- WLC5024  Wireless controller with separate wired and wireless engines
+-- wlanWLC5024-Wireless			OBJECT IDENTIFIER ::= { wirelessDevices 35 }
+-- wlanWLC5024-Wired			OBJECT IDENTIFIER ::= { wirelessDevices 36 }
+-- wlan7900Blade				OBJECT IDENTIFIER ::= { wirelessDevices 37 }  
+-- 23rd April 2008 Chis Saxton 
+-- asteriskAppliance              OBJECT IDENTIFIER ::= { callProcessors 8 }
+-- 26th April 2008 Paola Biti/Julian Palmer
+-- h3c Open system networking modules
+-- renamed osm osn
+-- jvOsnRouterOsnMIM           OBJECT IDENTIFIER ::= { jvOsns 4 }
+-- jvOsnRouterOsnFIC           OBJECT IDENTIFIER ::= { jvOsns 5 }
+-- jvOsn5500G                  OBJECT IDENTIFIER ::= { jvOsns 6 }
+-- 30th April 2008 Chris Saxton/John Pacheco
+-- 3Com IntelliJack NJ2000
+-- nj2000					OBJECT IDENTIFIER ::= { networkJacks 11 }    
+-- 23rd May 2008 Chris Saxton/Kevin Holohan
+-- 3CREVF100-73	3Com OfficeConnect Gigabit VPN Firewall (Eddystone).
+-- officeconnectgigvpnfirewall	  OBJECT IDENTIFIER ::= { xDSL 20 }
+-- 28th August 2008, Song Hao
+-- smartswitch2920SFPPlus      OBJECT IDENTIFIER ::= { hub 71 }
+-- smartswitch2928SFPPlus      OBJECT IDENTIFIER ::= { hub 72 }
+-- smartswitch2952SFPPlus      OBJECT IDENTIFIER ::= { hub 73 }
+-- smartswitch2928PWRPlus      OBJECT IDENTIFIER ::= { hub 74 }
+-- smartswitch2928PWRHPlus     OBJECT IDENTIFIER ::= { hub 75 }
+-- 10th October 2008, Song Hao
+-- wlanWLC5010-Wireless             OBJECT IDENTIFIER ::= { wirelessDevices 38 }
+-- wlanWLC5010-Wired                OBJECT IDENTIFIER ::= { wirelessDevices 39 }
+-- wlanWLC5004                      OBJECT IDENTIFIER ::= { wirelessDevices 40 }
+-- wlanWLC3024-Wireless             OBJECT IDENTIFIER ::= { wirelessDevices 41 }
+-- wlanWLC3024-Wired                OBJECT IDENTIFIER ::= { wirelessDevices 42 }
+-- wlanWLC3010-Wireless             OBJECT IDENTIFIER ::= { wirelessDevices 43 }
+-- wlanWLC3010-Wired                OBJECT IDENTIFIER ::= { wirelessDevices 44 }
+-- jvSwitch5800G24Port              OBJECT IDENTIFIER ::= { jvSwitches 66 }
+-- jvSwitch5800G48Port              OBJECT IDENTIFIER ::= { jvSwitches 67 }
+-- jvSwitch5800GPWR24Port           OBJECT IDENTIFIER ::= { jvSwitches 68 }
+-- jvSwitch5800GPWR48Port           OBJECT IDENTIFIER ::= { jvSwitches 69 }
+-- jvSwitch5800GT48Flex             OBJECT IDENTIFIER ::= { jvSwitches 70 }
+-- jvSwitch5800G24PortSFP           OBJECT IDENTIFIER ::= { jvSwitches 71 }
+-- jvSwitch5800XG14PortSFPPlusFlex  OBJECT IDENTIFIER ::= { jvSwitches 72 }
+-- jvSwitch5800XG24PortSFPPlusFlex  OBJECT IDENTIFIER ::= { jvSwitches 73 }
+-- 4th November 2008, Song Hao
+-- jvSwitch7903E-S             OBJECT IDENTIFIER ::= { jvSwitches 74 }
+-- 10th April 2009, Song Hao
+-- switch2226SFPPlus           OBJECT IDENTIFIER ::= { hub 76 }
+-- switch2250SFPPlus           OBJECT IDENTIFIER ::= { hub 77 }
+-- switch2426PWRPlus           OBJECT IDENTIFIER ::= { hub 78 }
+-- 24th May 2009, Song Hao
+-- renamed wlanWLC5024-Wireless to WX3024
+-- renamed wlanWLC5024-Wired to WX3024-LSW
+-- renamed wlanWLC5010-Wireless to WX3010
+-- renamed wlanWLC5010-Wired to WX3010-LSW
+-- WX3008                          OBJECT IDENTIFIER ::= { wirelessDevices 45 }
+-- WX3008-LSW                      OBJECT IDENTIFIER ::= { wirelessDevices 46 }
+-- 3rd July 2009, Song Hao
+-- wlanAP9552                      OBJECT IDENTIFIER ::= { wirelessDevices 47 }
+-- 6th November 2009, Song Hao
+-- jvSwitch4210A-9             OBJECT IDENTIFIER ::= { jvSwitches 75 }
+-- jvSwitch4210A-18            OBJECT IDENTIFIER ::= { jvSwitches 76 }
+-- jvSwitch4210A-26            OBJECT IDENTIFIER ::= { jvSwitches 77 }
+-- jvSwitch4210A-9-PWR         OBJECT IDENTIFIER ::= { jvSwitches 78 }
+-- jvSwitch4210A-18-PWR        OBJECT IDENTIFIER ::= { jvSwitches 79 }
+-- jvSwitch4210A-26-PWR        OBJECT IDENTIFIER ::= { jvSwitches 80 }
+-- jvSwitch4200G-24-NTG        OBJECT IDENTIFIER ::= { jvSwitches 81 }
+-- jvSwitch4200G-48-NTG        OBJECT IDENTIFIER ::= { jvSwitches 82 }
+-- jvSwitch4510G-24            OBJECT IDENTIFIER ::= { jvSwitches 83 }
+-- jvSwitch4510G-48            OBJECT IDENTIFIER ::= { jvSwitches 84 }
+-- wlanAP9152                  OBJECT IDENTIFIER ::= { wirelessDevices 48 }
+-- WX5002                      OBJECT IDENTIFIER ::= { wirelessDevices 49 }
+-- WX5004                      OBJECT IDENTIFIER ::= { wirelessDevices 50 }
+-- 11th January 2010, Song Hao
+-- jvSwitch4210G-24            OBJECT IDENTIFIER ::= { jvSwitches 85 }
+-- jvSwitch4210G-48            OBJECT IDENTIFIER ::= { jvSwitches 86 }
+-- jvSwitch4210G-24-PWR        OBJECT IDENTIFIER ::= { jvSwitches 87 }
+-- jvSwitch4210G-48-PWR        OBJECT IDENTIFIER ::= { jvSwitches 88 }
+-- jvSwitch4210G-24-NT         OBJECT IDENTIFIER ::= { jvSwitches 89 }
+-- jvSwitch4210G-48-NT         OBJECT IDENTIFIER ::= { jvSwitches 90 }
+-- smartswitch2909G            OBJECT IDENTIFIER ::= { hub 79 }
+-- smartswitch2909GPWR         OBJECT IDENTIFIER ::= { hub 80 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

@@ -1,0 +1,269 @@
+XÉ-- =================================================================
+-- Copyright (c) 2004-2011 Hangzhou H3C Tech. Co., Ltd.  All rights reserved.
+--
+-- Description:the definition of H3C Entity Vendortype OID
+-- Reference:
+-- Version: V4.56
+-- History:
+-- V1.0 2004.05.13  Created by lvzhenfeng, modified by gaolong.
+-- V1.1 2004.05.22  Adjusted by gaolong and lvzhenfeng.
+--   1. Adjust module name to h3cEntityVendorTypeOID and its location is set to { h3c 3 }.
+--   2. Rename module name prefix from h3cevtModule to h3cevtModuleRt_
+--   and h3cevtModuleSw_ for routers and switches seperately.
+--   3. Add h3cevtSubModuleRouter and h3cevtSubModuleSwitch under h3cevtModule.
+--   4. Split port type into two groups, one for routers, another for switches.
+-- V1.11 2004.6.17 add h3cevtHotSwapFan node by limeng for garibaldi
+-- V1.12 2004.7.19 add h3cevtModuleSwitchType {117-138}
+-- V1.13 2004.7.29 add h3cevtPortSwitchType {50-58}
+-- V1.14 2004.8.12 add h3cevtModuleSw_LSA1FP8U(h3cevtModuleSwitchType 139)
+-- V1.15 2004.8.25 change enumeration name
+--                     from h3cevtModuleSw_LS81SFCA(120) to h3cevtModuleSw_LS81SRPG0(120),
+--                     from h3cevtModuleSw_LS81SFCB(121) to h3cevtModuleSw_LS81SRPG1(121),
+--                     from h3cevtModuleSw_LS81SFCC(122) to h3cevtModuleSw_LS81SRPG2(122),
+--                     from h3cevtModuleSw_LS81SFCD(123) to h3cevtModuleSw_LS81SRPG3(123).
+--                 modify comments for these enumerations as well.
+-- V1.2  2004.8.26 add sub identifier of h3cevtPortSwitchType from 59 to 71.
+-- V1.21  2004.09.08 add sub identifier of h3cevtModuleSwitchType from 140 to 148.
+-- V1.3  2004-09-14 add subidentifier under h3cevtModuleSwitchType from 149 to 157 by wangyahui
+--                  add subidentifier under h3cevtModuleSwitchType from 158 to 159 by kangyinan
+--                  add subidentifier under h3cevtModuleSwitchType from 72 to 93 by wangyahui
+--                  add subidentifier under h3cevtModuleSwitchType from 94 to 96 by kangyinan
+--                  add type description for h3cevtModuleSw_SP4, h3cevtModuleSw_UP1, h3cevtModuleSw_XP4 by kangyinan
+-- V2.0 2004-10-12 updated by gaolong
+--      Change all underscore('_') characters to hyphen characters('-') because underscore character is not allowed in MIB module.
+--      Remove some adjacent hyphens
+-- V2.1  2004-10-19 add subidentifier under h3cevtModuleSwitchType from 160 to 162 by kangyinan
+--                  add subidentifier under h3cevtPortSwitchType 97 by kangyinan
+-- V2.2  2004-09-18 add sub identifier for h3cevtModuleRouterType from 111 to 117 by taotao
+-- V2.3  2004-11-18 add sub identifier 2 under h3cevtFan by liyutao
+-- V2.4  2004-11-23 add subidentifier under h3cevtModuleSwitchType from 163 to 166 by zhangchengmei
+-- V2.5  2004-12-04 add subidentifier 118 under h3cevtModuleRouterType by lizhiyong
+-- V2.6  2004-12-23 add sub identifier 4 to 7 under h3cevtPowerSupply by Zhangjianfeng
+--                  add sub identifier 167 to 169 under h3cevtModuleSwitchType by Zhangjianfeng
+-- V2.7  2004-12-26 add subidentifier 170 under h3cevtModuleSwitchType by wangyahui
+-- v2.8  2004-12-23 add subidentifier under h3cevtModuleSwitchType from 171 to 172 and
+--                  add sub identifier 98 to 99 under h3cevtPortSwitchType by liyue
+-- V2.9  2004-12-26 add sub identifier 173 under h3cevtModuleSwitchType by Zhangjianfeng
+--                  add sub identifier 100 for 24G cascade port under h3cevtPort by Zhangjianfeng
+-- V3.0  2004-01-07 add subidentifier 174 and 175 under h3cevtModuleSwitchType by wangyahui
+-- V3.1  2005-01-31 add subidentifier 176 under h3cevtModuleSwitchType by wangyahui
+-- V3.2  2005-02-26 add subidentifier 177 under h3cevtModuleSwitchType by zhangchengmei
+--                  add subidentifier 101 to 137 under h3cevtPortSwitchType by zhangchengmei
+--                  add subidentifier 178 under h3cevtModuleSwitchType by zhouqiang
+--                  add subidentifier 138 under h3cevtPortSwitchType by zhouqiang
+--                  add subidentifier 179 to 180 under h3cevtModuleSwitchType by wangyahui
+--                  remove trailing spaces
+-- V3.3  2005-03-22 add subidentifier 181 to 187 under h3cevtModuleSwitchType by zhangchengmei
+-- V3.4  2004-12-29 add subidentifier 119 to 120 under h3cevtModuleRouterType by lizhiyong
+-- V3.5  2005-04-12 add subidentifier 141 to 144 under h3cevtModuleRouterType by yinxiaoyu
+--                  add subidentifier 30 to 33 under h3cevtPortRouterType by yinxiaoyu
+-- V3.6  2005-04-07 add subidentifier 121 to 140 under h3cevtModuleRouterType by taotao
+--                  change the name of subidentifier 118 under h3cevtModuleRouterType by taotao
+--                  adjust file format
+-- V3.7  2005-05-10 add subidentifier 188 to 216 under h3cevtModuleSwitchType by zhangchengmei
+-- V3.8  2005-06-12 add subidentifier 145 to 149 under h3cevtModuleRouterType,
+--                  add subidentifier 34 under h3cevtPortRouterType by wanghanlin
+-- V3.9  2005-06-22 add subidentifier 150 under h3cevtModuleRouterType by yinxiaoyu
+-- V4.0  2005-07-18 add subidentifier 217 to 219 under h3cevtModuleSwitchType by yangliming
+--                  add subidentifier 139 to 142 under h3cevtPortSwitchType by wangyahui
+-- V4.01 2005-07-29 add subidentifier 220 to 225 under h3cevtModuleSwitchType by wangyahui
+-- V4.02 2005-07-21 change the name of subidentifier 183 under h3cevtModuleSwitchType,
+--                  add subidentifier 226 to 227 under h3cevtModuleSwitchType by zhangchengmei
+--       2005-08-29 add subidentifier 143 under h3cevtPortSwitchType by qianxiaoyu
+--                  add subidentifier 151 to 161 under h3cevtModuleRouterType by taotao
+--                  add subidentifier 35 to 41 under h3cevtPortRouterType by taotao
+-- V4.03 2005-09-07 add h3cevtCPU and h3cevtGeneralCPU by taotao
+--                  add subidentifier 162 to 163 under h3cevtModuleRouterType by taotao
+--                  adjust file format by gaolong
+-- V4.04 2005-09-13 add subidentifier 228 to 253 under h3cevtModuleSwitchType by zhangchengmei
+--       2005-09-13 add subidentifier 257 to 268 under h3cevtModuleSwitchType by zhangchengmei
+-- V4.05 2005-11-04 add subidentifier 144 to 149 under h3cevtPortSwitchType by zhangchengmei
+--                  add subidentifier 150 under h3cevtPortSwitchType by huangyuetao
+--                  add subidentifier 269 to 271 under h3cevtModuleSwitchType by yangxiaopeng
+--                  add subidentifier 272 under h3cevtModuleSwitchType by qianxiaoyu
+--                  add subidentifier 164 to 165 under h3cevtModuleRouterType by xuejiayong
+-- V4.06 2005-11-24 add subidentifier 500 to 501 under h3cevtModuleSwitchType by wangyahui
+-- V4.07 2005-11-28 add subidentifier 300 to 316 under h3cevtModuleSwitchType by zhangchengmei
+-- V4.08 2005-12-09 add subidentifier 220 to 223 under h3cevtModuleRouterType by taotao
+-- V4.09 2005-12-30 add subidentifier 151 to 170 under h3cevtPortSwitchType by zhangchengmei
+-- V4.10 2006-01-04 add subidentifier 701 under h3cevtModuleSwitchType by qianxiaoyu
+-- V4.11 2006-02-12 add subidentifier 200 to 219 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 702 under h3cevtModuleSwitchType by chenxiaohui
+--                  add subidentifier 600 under h3cevtModuleRouterType by qujin
+--                  add subidentifier 317 under h3cevtModuleSwitchType by zhangchengmei
+-- V4.12 2006-02-24 add subidentifier 703 under h3cevtModuleSwitchType by chijuntao
+--                  add subidentifier 224 to 228 under h3cevtModuleRouterType by taotao
+-- V4.13 2006-02-27 add subidentifier 171 to 174 under h3cevtPortSwitchType by wangshunli
+--                  add subidentifier 318 to 336 under h3cevtModuleSwitchType by zhaiyingying
+-- V4.14 2006-03-14 add subidentifier 175 under h3cevtPortSwitchType by wangyahui
+--                  add subidentifier 502 to 504 under h3cevtModuleSwitchType by wangyahui
+-- V4.15 2006-04-03 add subidentifier 176 under h3cevtPortSwitchType by wangyahui
+-- V4.16 2006-04-26 add subidentifier 229 to 233 under h3cevtModuleRouterType by taotao
+-- V4.17 2006-04-21 add subidentifier 337 to 340 under h3cevtModuleSwitchType by zhaiyingying
+-- V4.18 2006-06-05 add subidentifier 704 to 705 under h3cevtModuleSwitchType by zhangxianguo
+--                  add subidentifier 505 to 506 under h3cevtModuleSwitchType by zhangjianfeng
+--                  add subidentifier 341 to 349 under h3cevtModuleSwitchType by zhaiyingying
+--                  add subidentifier 177 to 178 under h3cevtPortSwitchType by zhangjianfeng
+--                  add subidentifier 179 to 180 under h3cevtPortSwitchType by zhangxianguo
+-- V4.19 2006-08-23 add subidentifier 507 to 509 under h3cevtModuleSwitchType by wangyahui
+--                  modify object name of subidentifier 502 and 503 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 234 to 235 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 350 to 357 under h3cevtModuleSwitchType by zhaiyingying
+-- V4.20 2006-09-26 add subidentifier 510 to 514 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 601 to 603 under h3cevtModuleRouterType by zhoujianming
+--                  add subidentifier 236 to 239 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 240 to 241 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 800 to 801 under h3cevtModuleSwitchType by luoguixing
+-- V4.21 2006-10-26 add subidentifier 358 to 370 under h3cevtModuleSwitchType by zhaiyingying
+--                  add subidentifier 183 under h3cevtPortSwitchType by zhaiyingying
+--                  add subidentifier 515 to 526 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 181 to 182 under h3cevtPortSwitchType by wangyahui
+-- V4.22 2006-11-02 add subidentifier 527 to 536 under h3cevtModuleSwitchType by wangyahui
+--                  modify description of 511 to 513 under h3cevtModuleSwitchType by wangyahui
+--       2006-11-10 add subidentifier 371 to 378 under h3cevtModuleSwitchType by shuxiongtao
+--       2006-11-08 add subidentifier 184 to 185 under h3cevtPortSwitchType by zhaiyingying
+-- V4.23 2006-12-04 add subidentifier 242 to 243 under h3cevtModuleRouterType by liutinghai
+-- V4.24 2006-01-24 add subidentifier 244 to 245 under h3cevtModuleRouterType by liutinghai
+-- V4.25 2007-03-19 add subidentifier 537 under h3cevtModuleSwitchType by wangyahui
+-- V4.26 2007-04-12 add subidentifier 538 to 542 under h3cevtModuleSwitchType by wangyahui
+-- V4.27 2007-04-25 add subidentifier 706 under h3cevtModuleSwitchType by zhangzongyi
+--                  add subidentifier 379 to 380 under h3cevtModuleSwitchType by zhaiyingying
+--                  add subidentifier 246 to 250 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 42 under h3cevtPortRouterType by liutinghai
+-- V4.28 2007-05-28 add subidentifier 707 under h3cevtModuleSwitchType by ligaoxu
+--                  add subidentifier 381 to 392 under h3cevtModuleSwitchType by shuxiongtao
+--                  modify name of subidentifier 371 and 374 under h3cevtModuleSwitchType by shuxiongtao
+--                  add subidentifier 251 to 253 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 254 to 255 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 186 under h3cevtPortSwitchType by jinzhaoqiong
+-- V4.29 2007-07-09 add subidentifier 543 to 551 under h3cevtModuleSwitchType by zhangjianfeng
+--                  add subidentifier 552 to 554 under h3cevtModuleSwitchType by wangyahui
+-- V4.30 2007-07-26 add subidentifier 400 under h3cevtModuleRouterType by xuejiayong
+--                  add subidentifier 708 under h3cevtModuleSwitchType by xiuyihong
+--                  add subidentifier 256 to 258 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 259 to 263 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 3 to 5 under h3cevtOther by gaolong
+-- V4.31 2007-08-27 add subidentifier 187 to 188 under h3cevtPortSwitchType by ruanhan
+--                  add subidentifier 802 to 804 under h3cevtModuleSwitchType by luoguixing
+--                  add subidentifier 393 to 397 under h3cevtModuleSwitchType by shuxiongtao
+-- V4.32 2007-09-25 add subidentifier 555 to 559 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 805 under h3cevtModuleSwitchType by luoguixing
+--                  add subidentifier 401 to 403 under h3cevtModuleRouterType by tanwen
+--                  add subidentifier 43 under h3cevtPortRouterType by qikai
+--                  add subidentifier 266 to 267 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 398 to 399 under h3cevtModuleSwitchType by hexuefei
+-- V4.33 2007-10-22 add subidentifier 189 under h3cevtPortSwitchType by liaoxin
+--                  add subidentifier 268 under h3cevtModuleRouterType by liutinghai
+-- V4.34 2007-11-26 add subidentifier 269 to 273 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 274 to 276 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 404 to 406 under h3cevtModuleRouterType by chaiyaqin
+--                  add subidentifier 400 to 407 under h3cevtModuleSwitchType by shuxiongtao
+-- V4.35 2007-12-27 add subidentifier 277 to 278 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 560 to 568 under h3cevtModuleSwitchType by wangyahui
+-- V4.36 2008-01-30 add subidentifier 408 under h3cevtModuleSwitchType by hexuefei
+--                  add subidentifier 569 to 572 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 279 to 280 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 190 under h3cevtPortSwitchType by liujingya
+-- V4.37 2008-02-20 add subidentifier 720 to 724 under h3cevtModuleSwitchType by chaiyaqin
+--                  add subidentifier 573 to 574 under h3cevtModuleSwitchType by zhangjianfeng
+--                  modify name of subidentifier 546 and 550 under h3cevtModuleSwitchType by zhangjianfeng
+--                  add subidentifier 575 to 576 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 281 under h3cevtModuleRouterType by liutinghai
+-- V4.38 2008-03-31 add subidentifier 806 to 808 under h3cevtModuleSwitchType by luoguixing
+--                  add subidentifier 709 to 715 under h3cevtModuleSwitchType by wangcong
+--                  add subidentifier 191 to 196 under h3cevtPortSwitchType by wangcong
+--                  add subidentifier 44 under h3cevtPortRouterType by liutinghai
+--                  add subidentifier 409 to 431 under h3cevtModuleSwitchType by zhaiyingying
+--                  add subidentifier 432 under h3cevtModuleSwitchType by shuxiongtao
+-- V4.39 2008-04-29 add subidentifier 577 to 589 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 407 to 409 under h3cevtModuleRouterType by tanwen
+-- V4.40 2008-05-31 add subidentifier 410 to 413 under h3cevtModuleRouterType by tanwen
+--                  add subidentifier 282 to 284 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 285 to 286 under h3cevtModuleRouterType by liutinghai
+-- V4.41 2008-07-28 add subidentifier 590 to 592 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 287 to 289 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 290 to 291 under h3cevtModuleRouterType by liutinghai
+--                  add subidentifier 45 to 46 under h3cevtPortRouterType by liutinghai
+--                  add subidentifier 809 to 810 under h3cevtModuleSwitchType by luoguixing
+-- V4.42 2008-08-26 modify name of 379 and 399 under h3cevtModuleSwitchType by wangwei
+--                  modify description of 408 under h3cevtModuleSwitchType by wangwei
+--                  modify name and description of 804 under h3cevtModuleSwitchType by wangwei
+--                  add subidentifier 433 to 434 under h3cevtModuleSwitchType by wangwei
+--                  add subidentifier 593 to 595 under h3cevtModuleSwitchType by wangyahui
+--                  modify name and description of 256 and 288 under h3cevtPortRouterType by qikai
+--                  add subidentifier 292 to 293 under h3cevtPortRouterType by qikai
+-- V4.43 2008-10-13 add subidentifier 725 under h3cevtModuleSwitchType by ruanhan
+--                  add subidentifier 197 under h3cevtPortSwitchType by ruanhan
+--                  add subidentifier 811 under h3cevtModuleSwitchType by luoguixing
+--                  add subidentifier 596 to 601 under h3cevtModuleSwitchType by wangyahui
+-- V4.44 2008-11-04 add subidentifier 294 under h3cevtPortRouterType by qikai
+--                  add subidentifier 414 under h3cevtModuleRouterType by tanwen
+-- V4.45 2008-12-01 add subidentifier 602 to 619 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 435 to 442 under h3cevtModuleSwitchType by zhaiyingying
+--                  modify name of 546 under h3cevtModuleSwitchType by zhangjianfeng
+--                  add subidentifier 295 under h3cevtPortRouterType by qikai
+--                  add subidentifier 443 under h3cevtModuleSwitchType by shuxiongtao
+-- V4.46 2008-12-25 add subidentifier 620 to 622 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 716 to 718 under h3cevtModuleSwitchType by zhangshilin
+--                  add subidentifier 444 to 445 under h3cevtModuleSwitchType by wangchang
+-- V4.47 2009-03-02 add subidentifier 446 to 452 under h3cevtModuleSwitchType by wangchang
+--                  add subidentifier 719 under h3cevtModuleSwitchType by zhangshilin
+--                  add subidentifier 623 to 633 under h3cevtModuleSwitchType by wangyahui
+-- V4.48 2009-03-31 add subidentifier 415 under h3cevtModuleRouterType by tanwen
+--                  add subidentifier 296 under h3cevtPortRouterType by qikai
+--                  add subidentifier 297 to 298 under h3cevtPortRouterType by qianjialin
+--                  add subidentifier 453 to 464 under h3cevtModuleSwitchType by huyinxing
+-- V4.49 2009-07-02 add subidentifier 299 to 302 under h3cevtModuleRouterType by qikai
+--                  add subidentifier 303 under h3cevtModuleRouterType by chenfeihu
+--                  add subidentifier 304 to 307 under h3cevtModuleRouterType by qianjialin
+--                  add subidentifier 634 to 637 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 604 to 606 under h3cevtModuleRouterType by chenjianhui
+--                  add subidentifier 465 to 468 under h3cevtModuleSwitchType by zhaiyingying
+--                  add subidentifier 469 to 472 under h3cevtModuleSwitchType by huyinxing
+--                  add subidentifier 198 under h3cevtPortSwitchType by huyinxing
+--                  add subidentifier 199 under h3cevtPortSwitchType by zhangjianfeng
+-- V4.50 2009-08-28 add subidentifier 638 to 640 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 308 to 310 under h3cevtModuleRouterType by qianjialin
+-- V4.51 2009-11-09 add subidentifier 726 under h3cevtModuleSwitchType by ruanhan
+--                  add subidentifier 641 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 473 to 477 under h3cevtModuleSwitchType by yudongyang
+--                  add subidentifier 478 to 485 under h3cevtModuleSwitchType by heweibin
+-- V4.52 2009-12-31 add subidentifier 200 to 201 under h3cevtPortSwitchType by zhanghaiyang
+--                  add subidentifier 642 to 651 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 416 under h3cevtModuleRouterType by lixiaomin
+--                  add subidentifier 486 under h3cevtModuleSwitchType by yudongyang
+--                  add subidentifier 727 to 728 under h3cevtModuleSwitchType by xiaobing
+--                  add subidentifier 652 to 659 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 487 to 488 under h3cevtModuleSwitchType by huyinxing
+--                  add subidentifier 660 to 662 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 202 to 203 under h3cevtPortSwitchType by yangdonghong
+-- V4.53 2010-03-03 add subidentifier 812 under h3cevtModuleSwitchType by mashuhang
+--                  add subidentifier 489 to 497 under h3cevtModuleSwitchType by liubuxiang
+--                  add subidentifier 498 to 499 under h3cevtModuleSwitchType by shikejun
+--                  add subidentifier 900 under h3cevtModuleSwitchType by yangqiulin
+--                  add subidentifier 901 to 902 under h3cevtModuleSwitchType by huyinxing
+-- V4.54 2010-04-21 add subidentifier 903 to 904 under h3cevtModuleSwitchType by huyinxing
+--                  add subidentifier 905 to 907 under h3cevtModuleSwitchType by shikejun
+--                  add subidentifier 663 to 685 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 813 under h3cevtModuleSwitchType by mashuhang
+--                  add subidentifier 729 under h3cevtModuleSwitchType by zhangshilin
+--                  add subidentifier 908 to 913 under h3cevtModuleSwitchType by yangbin
+--                  add subidentifier 914 to 918 under h3cevtModuleSwitchType by huyinxing
+--                  add subidentifier 5000 to 5011 under h3cevtModuleRouterType by qianjialin
+--                  add subidentifier 919 to 927 under h3cevtModuleSwitchType by langgaoyi
+-- V4.55 2011-01-31 add subidentifier 417 under h3cevtModuleRouterType by tanwen
+--                  add subidentifier 311 to 314 under h3cevtModuleRouterType by qianjialin
+--                  add subidentifier 686 to 691 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 928 to 929 under h3cevtModuleSwitchType by langgaoyi
+-- V4.56 2011-04-22 add subidentifier 930 under h3cevtModuleSwitchType by liuhui
+--                  add subidentifier 814 to 815 under h3cevtModuleSwitchType by mashuhang
+--                  add subidentifier 692 to 694 under h3cevtModuleSwitchType by wangyahui
+--                  add subidentifier 204 under h3cevtPortSwitchType by yangliming
+-- =================================================================
+         ê"The private MIB includes the definition of the object
+            identifiers on H3C products, which are used by the
+            entPhysicalTable of the ENTITY-MIB to uniquely identify the
+            type of each physical entry." ”"Platform Team H3C Technologies Co., Ltd.
+            Hai-Dian District Beijing P.R. China
+            Zip:100085
+            http://www.h3c.com"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

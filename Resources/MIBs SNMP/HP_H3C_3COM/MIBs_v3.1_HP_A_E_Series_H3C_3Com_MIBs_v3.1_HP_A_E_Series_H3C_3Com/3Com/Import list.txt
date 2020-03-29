@@ -1,0 +1,1928 @@
+
+
+A3Com-products-MIB
+ Import module RFC1155-SMI
+
+
+A3COM-HUAWEI-3GMODEM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-8021PAE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IEEE8021-PAE-MIB
+
+
+A3COM-HUAWEI-AAA-NASID-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-AAL5-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-ACFP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IPV6-TC
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-ACL-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-AFC-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-ARP-RATELIMIT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-ATM-DXI-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-BFD-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-BLG-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-CBQOS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-CBQOS2-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-CFCARD-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-COMMON-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-CONFIG-MAN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DAR-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-DEVICE-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-DHCPR-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DHCPRELAY-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-DHCPS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DHCP-SERVER-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DHCPSNOOP-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-LswVLAN-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DLDP-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-DNS-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-DOMAIN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-DOT11-ACMT-MIB
+ Import module SNMPv2-SMI
+ Import module IANAifType-MIB
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-APMT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-CFG-MIB
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-CFGEXT-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-QOS-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+
+
+A3COM-HUAWEI-DOT11-ROAM-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-RRM-MIB
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11S-MESH-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-STATION-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-WIDS-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT11-WLANEXT-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DOT11-REF-MIB
+
+
+A3COM-HUAWEI-DOT3-EFM-EPON-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module SNMPv2-CONF
+
+
+A3COM-HUAWEI-DSP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module ENTITY-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-DVPN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-E1-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-E1T1VI-MIB
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-EFM-COMMON-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module HCNUM-TC
+ Import module IF-MIB
+ Import module SNMPv2-CONF
+
+
+A3COM-HUAWEI-ENTITY-EXT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module ENTITY-MIB
+
+
+A3COM-HUAWEI-ENTITY-VENDORTYPE-OID-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-ENTRELATION-MIB
+ Import module ENTITY-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-EPON-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module A3COM-HUAWEI-DEVICE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+
+
+A3COM-HUAWEI-EPON-DEVICE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+
+
+A3COM-HUAWEI-EPON-FB-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-EPON-UNI-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-EVC-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-FIREWALL-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-FLASH-MAN-MIB
+ Import module ENTITY-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-FLOWTEMPLATE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-FR-QOS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-FTM-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-GRE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-HGMP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-IDS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+
+
+A3COM-HUAWEI-IF-EXT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-IFQOS2-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-IKE-MONITOR-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-IP-MIB
+ Import module RFC-1212
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1155-SMI
+
+
+A3COM-HUAWEI-IPA-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-IP-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-IP-BROADCAST-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-IPSEC-MONITOR-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-IPV6-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+
+
+A3COM-HUAWEI-IPX-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-ISDN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+
+
+A3COM-HUAWEI-L2ISOLATE-MIB
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-L2VPN-PWE3-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-L4RDT-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LAG-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module Q-BRIDGE-MIB
+
+
+A3COM-HUAWEI-LI-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+
+
+A3COM-HUAWEI-LLDP-EXT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module LLDP-MIB
+
+
+A3COM-HUAWEI-LPBKDT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module Q-BRIDGE-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-MAC-INFORMATION-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-MCDR-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+ Import module Q-BRIDGE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-MINM-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module A3COM-HUAWEI-VSI-MIB
+
+
+A3COM-HUAWEI-MIRRORGROUP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-MLSR-SYSTEM-MIB
+ Import module RFC-1212
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-MPLS-LDP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-MPLS-LSR-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IANA-ADDRESS-FAMILY-NUMBERS-MIB
+ Import module INET-ADDRESS-MIB
+
+
+A3COM-HUAWEI-MPLSOAM-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-MPLSOAM-PS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-MPLS-BGP-VPN-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-MPM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-MULTICAST-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-NAT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-NDEC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-NET-MAN-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-NS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-NTP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-OBJECT-INFO-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-OID-MIB
+ Import module RFC1155-SMI
+
+
+A3COM-HUAWEI-PBR-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+
+
+
+
+A3COM-HUAWEI-PORTAL-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+
+
+A3COM-HUAWEI-PORT-SECURITY-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IEEE8021-PAE-MIB
+
+
+A3COM-HUAWEI-POSA-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-POWER-ETH-EXT-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module POWER-ETHERNET-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-PPPOE-SERVER-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-PPP-OVER-SONET-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-PROTOCOL-VLAN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-PROT-PRIORITY-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-QINQ-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-QOS-CAPABILITY-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-QOS-PROFILE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-RADIUS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module RADIUS-AUTH-CLIENT-MIB
+ Import module RADIUS-ACC-CLIENT-MIB
+
+
+A3COM-HUAWEI-RCP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-RCR-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-RPR-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IEEE-802DOT17-RPR-MIB
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-RRPP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-RS485-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-SNA-DLSW-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-SNA-DLSW-EXT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module INET-ADDRESS-MIB
+ Import module DLSW-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-SNMP-EXT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswARP-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswDEVM-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module A3COM-HUAWEI-DEVICE-MIB
+
+
+A3COM-HUAWEI-LswDHCP-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswIGSP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-LswINF-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswMAM-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module A3COM-HUAWEI-LswVLAN-MIB
+
+
+A3COM-HUAWEI-LswMix-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-DEVICE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswMSTP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module BRIDGE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUWAEI-LswPERFORMANCE-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module IF-MIB
+ Import module RMON2-MIB
+ Import module RMON-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswQos-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswRSTP-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module BRIDGE-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswSMON-MIB
+ Import module RFC-1212
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-LswTRAP-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module A3COM-HUAWEI-LswDEVM-MIB
+ Import module A3COM-HUAWEI-DEVICE-MIB
+
+
+A3COM-HUAWEI-LswVLAN-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-LswINF-MIB
+
+
+A3COM-HUAWEI-SRM-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-SSH-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-STACK-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module ENTITY-MIB
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-STORM-CONSTRAIN-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-SUBNET-VLAN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-SYSLOG-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+
+
+A3COM-HUAWEI-SYS-MAN-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-TARGET-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-T1-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-TRANSCEIVER-INFO-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-TRAP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+ Import module IF-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-TRNG-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-TUNNEL-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+ Import module IPV6-FLOW-LABEL-MIB
+ Import module IF-MIB
+
+
+A3COM-HUAWEI-UI-MAN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-UNICAST-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+A3COM-HUAWEI-USER-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-USERLOG-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+
+
+A3COM-HUAWEI-VLAN-MIB
+ Import module RFC-1212
+ Import module RFC1155-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOAAACLIENT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOANALOGIF-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOCALLACTIVE-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-VO-TYPE-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOCALLHISTORY-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-VO-TYPE-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VODIALCONTROL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-VO-TYPE-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VODIGITALIF-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOGENERAL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOGKCLIENT-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOH323CALLSTAT-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOICE-CALL-ACTIVE-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-VOICE-DIAL-CONTROL-MIB
+ Import module DIAL-CONTROL-MIB
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOICE-CALL-HISTORY-MIB
+ Import module SNMPv2-SMI
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+ Import module DIAL-CONTROL-MIB
+ Import module SNMPv2-TC
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOICE-DIAL-CONTROL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module DIAL-CONTROL-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOICE-IF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOICE-VLAN-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+
+
+A3COM-HUAWEI-VOIF-MIB
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VOSIP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VO-TYPE-MIB
+
+
+A3COM-HUAWEI-VRRP-EXT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module VRRP-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-VSI-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-WAPI-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module INET-ADDRESS-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+
+
+A3COM-HUAWEI-WEB-AUTHENTICATION-MIB
+ Import module A3COM-HUAWEI-OID-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+SNMP-USER-BASED-SM-3DES-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+
+
+GB15629dot11-WAPI-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+
+
+IANA-ADDRESS-FAMILY-NUMBERS-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+IANA-RTPROTO-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+IEEE-802DOT17-RPR-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module INET-ADDRESS-MIB
+ Import module HC-PerfHist-TC-MIB
+
+
+IEEE8021-CFM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module LLDP-MIB
+ Import module Q-BRIDGE-MIB
+
+
+IEEE8021-PAE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+ Import module IF-MIB
+
+
+IEEE8023-LAG-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+IEEE802dot11-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+
+
+IPSEC-IKEACTION-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+ Import module INET-ADDRESS-MIB
+ Import module IPSEC-SPD-MIB
+
+
+IPSEC-IPSECACTION-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+ Import module INET-ADDRESS-MIB
+ Import module IPSEC-SPD-MIB
+ Import module DIFFSERV-MIB
+
+
+
+
+LLDP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+ Import module RMON2-MIB
+ Import module IANA-ADDRESS-FAMILY-NUMBERS-MIB
+
+
+LLDP-EXT-DOT1-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+ Import module LLDP-MIB
+ Import module Q-BRIDGE-MIB
+
+
+LLDP-EXT-DOT3-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module LLDP-MIB
+
+
+RFC1155-SMI
+
+
+RFC1158-MIB
+ Import module RFC1155-SMI
+
+
+RFC-1212
+
+
+RFC1213-MIB
+ Import module RFC1155-SMI
+ Import module RFC-1212
+
+
+RFC-1215
+
+
+RFC1229-MIB
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module RFC-1212
+
+
+RFC1271-MIB
+ Import module RFC1155-SMI
+ Import module RFC1158-MIB
+ Import module RFC1213-MIB
+ Import module RFC-1212
+
+
+RFC1315-MIB
+ Import module RFC-1212
+ Import module RFC1213-MIB
+ Import module RFC1155-SMI
+ Import module RFC-1215
+
+
+RFC1381-MIB
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module RFC-1212
+
+
+RFC1382-MIB
+ Import module RFC1155-SMI
+ Import module RFC-1212
+ Import module RFC-1215
+
+
+PPP-LCP-MIB
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module RFC-1212
+
+
+PPP-IP-NCP-MIB
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module RFC-1212
+ Import module PPP-LCP-MIB
+
+
+BRIDGE-MIB
+ Import module RFC1155-SMI
+ Import module RFC1213-MIB
+ Import module RFC-1212
+ Import module RFC-1215
+
+
+TOKEN-RING-RMON-MIB
+ Import module RFC1155-SMI
+ Import module RFC-1212
+ Import module RFC1271-MIB
+
+
+IANAifType-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+BGP4-MIB
+ Import module SNMPv2-SMI
+ Import module RFC1213-MIB
+
+
+RIPv2-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+
+
+SNA-SDLC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+
+
+OSPF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+OSPF-TRAP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module OSPF-MIB
+
+
+DLSW-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module SNA-SDLC-MIB
+
+
+IP-FORWARD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module RFC1213-MIB
+ Import module SNMPv2-CONF
+
+
+FRAME-RELAY-DTE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module RFC1213-MIB
+ Import module IF-MIB
+
+
+ISDN-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module IANAifType-MIB
+ Import module RFC1213-MIB
+
+
+DIAL-CONTROL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IANAifType-MIB
+ Import module IF-MIB
+ Import module RFC1213-MIB
+
+
+INTEGRATED-SERVICES-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+IF-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMPv2-MIB
+ Import module IANAifType-MIB
+
+
+SNMP-NOTIFICATION-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMP-TARGET-MIB
+ Import module SNMPv2-CONF
+
+
+IPV6-TCP-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module IPV6-TC
+
+
+IPV6-UDP-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module IPV6-TC
+
+
+IPV6-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IPV6-TC
+
+
+IPV6-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+IPV6-ICMP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module IPV6-MIB
+
+
+ATM-TC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+ATM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module ATM-TC-MIB
+
+
+SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+
+
+SNMP-MPD-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+
+
+SNMP-TARGET-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+
+
+SNMPv2-SMI
+
+
+SNMPv2-TC
+ Import module SNMPv2-SMI
+
+
+SNMPv2-CONF
+ Import module SNMPv2-SMI
+
+
+SMON-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module RFC1213-MIB
+ Import module RMON-MIB
+ Import module SNMPv2-CONF
+
+
+RADIUS-AUTH-CLIENT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+
+
+RADIUS-ACC-CLIENT-MIB
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+
+
+ADSL-LINE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module PerfHist-TC-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module ADSL-TC-MIB
+
+
+ADSL-TC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+EtherLike-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+P-BRIDGE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module BRIDGE-MIB
+ Import module IF-MIB
+
+
+Q-BRIDGE-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+ Import module SNMPv2-CONF
+ Import module BRIDGE-MIB
+ Import module P-BRIDGE-MIB
+ Import module RFC1213-MIB
+ Import module A3COM-HUAWEI-LswVLAN-MIB
+
+
+VRRP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+NETWORK-SERVICES-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+
+
+HOST-RESOURCES-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+RMON-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+
+
+HCNUM-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+DISMAN-PING-MIB
+ Import module RFC1155-SMI
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+
+
+IGMP-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+
+
+HC-RMON-MIB
+ Import module RFC1213-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+DIFFSERV-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+ Import module INTEGRATED-SERVICES-MIB
+ Import module DIFFSERV-DSCP-TC
+
+
+DIFFSERV-DSCP-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+SNMP-USER-BASED-SM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+
+
+SNMP-VIEW-BASED-ACM-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMP-FRAMEWORK-MIB
+
+
+SNMPv2-TM
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+SNMPv2-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+
+
+TRANSPORT-ADDRESS-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+PerfHist-TC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+IPV6-FLOW-LABEL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+POWER-ETHERNET-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+
+
+HC-PerfHist-TC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+MPLS-TC-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+MPLS-TE-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module MPLS-TC-STD-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module DIFFSERV-MIB
+ Import module INET-ADDRESS-MIB
+
+
+MPLS-LSR-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module MPLS-TC-STD-MIB
+ Import module IANA-ADDRESS-FAMILY-NUMBERS-MIB
+ Import module INET-ADDRESS-MIB
+
+
+MPLS-FTN-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module DIFFSERV-DSCP-TC
+ Import module INET-ADDRESS-MIB
+ Import module MPLS-TC-STD-MIB
+
+
+MPLS-LDP-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module INET-ADDRESS-MIB
+ Import module DIFFSERV-MIB
+ Import module MPLS-TC-STD-MIB
+ Import module MPLS-LSR-STD-MIB
+
+
+SNMP-USM-AES-MIB
+ Import module SNMPv2-SMI
+ Import module SNMP-FRAMEWORK-MIB
+
+
+INET-ADDRESS-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+TCP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+
+
+TUNNEL-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+ Import module IPV6-FLOW-LABEL-MIB
+ Import module IF-MIB
+ Import module IANAifType-MIB
+
+
+UDP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+
+
+ENTITY-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+
+
+VPN-TC-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+IP-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+ Import module IF-MIB
+
+
+MPLS-L3VPN-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module VPN-TC-STD-MIB
+ Import module SNMP-FRAMEWORK-MIB
+ Import module IANA-RTPROTO-MIB
+ Import module INET-ADDRESS-MIB
+ Import module MPLS-TC-STD-MIB
+ Import module MPLS-LSR-STD-MIB
+
+
+ISIS-MIB
+ Import module SNMPv2-TC
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module SNMP-FRAMEWORK-MIB
+ Import module DIFFSERV-MIB
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+
+
+RMON2-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module RMON-MIB
+ Import module TOKEN-RING-RMON-MIB
+
+
+SIP-TC-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+SIP-UA-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-CONF
+ Import module NETWORK-SERVICES-MIB
+ Import module INET-ADDRESS-MIB
+ Import module SIP-TC-MIB
+
+
+IPSEC-SPD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module DIFFSERV-MIB
+ Import module INET-ADDRESS-MIB
+ Import module SNMP-FRAMEWORK-MIB
+
+
+IANA-MAU-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+
+
+MAU-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module IANA-MAU-MIB
+
+
+DOT3-OAM-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module HCNUM-TC
+ Import module IF-MIB
+ Import module SNMPv2-CONF
+
+
+PIM-STD-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+ Import module IANA-RTPROTO-MIB
+
+
+PIM-BSR-MIB
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module SNMPv2-CONF
+ Import module INET-ADDRESS-MIB
+
+
+SAVI-MIB
+ Import module SNMPv2-CONF
+ Import module SNMPv2-SMI
+ Import module SNMPv2-TC
+ Import module IF-MIB
+ Import module INET-ADDRESS-MIB
+ Import module IP-MIB
