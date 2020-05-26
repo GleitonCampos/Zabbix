@@ -12,7 +12,7 @@ apt install -y linux-headers-generic build-essential dkms  # && \
 rm /tmp/finish
 
 
-wget https://repo.zabbix.com/zabbix/4.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.0-3%2Bfocal_all.deb -O zabbix-4.0.deb
+wget https://repo.zabbix.com/zabbix/4.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.0-3+focal_all.deb -O zabbix-4.0.deb
 #dpkg -i zabbix-release_4.0-2+bionic_all.deb
 dpkg -i zabbix-4.0.deb 
 apt update 
